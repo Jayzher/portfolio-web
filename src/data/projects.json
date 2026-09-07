@@ -342,7 +342,7 @@
     "title": "Department of Agriculture Request & Travel Order System",
     "description": "Developed during ICT Internship at Department of Agriculture. Digital internal service request portal and travel order management platform with automated approvals, multi-tier routing, and PDF travel order generation.",
     "shortDescription": "Digitized service request tracking & automated travel order approval workflows",
-    "thumbnail": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&h=400&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop",
     "video": null,
     "techStack": [
       "PHP",
