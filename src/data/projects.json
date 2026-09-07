@@ -339,9 +339,9 @@
   },
   {
     "id": "proj-da-service",
-    "title": "Department of Agriculture Request & Travel Order System",
-    "description": "Developed during ICT Internship at Department of Agriculture. Digital internal service request portal and travel order management platform with automated approvals, multi-tier routing, and PDF travel order generation.",
-    "shortDescription": "Digitized service request tracking & automated travel order approval workflows",
+    "title": "Request & Travel Order System",
+    "description": "Engineered during ICT Software Engineer Internship (OJT) at the Department of Agriculture. Digital internal service request portal and travel order management platform with multi-tier routing, approval workflows, staff travel tracking, and dynamic PDF travel voucher generation.",
+    "shortDescription": "Digitized service request tracking & automated travel order approval workflows — Built during ICT Internship (OJT) at Department of Agriculture",
     "thumbnail": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop",
     "video": null,
     "techStack": [
@@ -349,17 +349,46 @@
       "JavaScript",
       "MySQL",
       "Bootstrap",
-      "REST APIs"
+      "REST APIs",
+      "PDF Engine"
     ],
     "category": "api",
     "links": {
       "github": "",
       "live": "",
       "isPrivateRepo": true,
-      "privateRepoNote": "Government Agency System — Architecture & Documentation available upon request"
+      "privateRepoNote": "Government Agency System (Department of Agriculture OJT) — Architecture & Documentation available upon request"
     },
     "featured": false,
     "order": 7,
-    "createdAt": "2026-03-18T00:00:00Z"
+    "createdAt": "2026-03-18T00:00:00Z",
+    "caseStudy": {
+      "problem": "Government regional office operations suffered from slow paper-based service request routing, lost travel order documents, and manual travel voucher approvals across multiple agency divisions.",
+      "role": "ICT Software Engineer Intern (OJT at Department of Agriculture) — Designed the digital service request workflow, travel order approval engine, relational MySQL schema, and automated PDF travel voucher generator.",
+      "architectureFlow": [
+        { "step": "PHP / Bootstrap Web UI", "desc": "Service & Travel Request Forms" },
+        { "step": "REST API Controller", "desc": "Request Routing & Multi-Tier Approval Logic" },
+        { "step": "PDF Voucher Engine", "desc": "Automated Travel Order PDF Generation" },
+        { "step": "MySQL DB", "desc": "Government Service & Staff Travel Logs" }
+      ],
+      "architectureDetails": {
+        "databaseSchema": "Relational schema managing Agency Divisions, Employee Profiles, Request Tickets, Approval Steps, and Travel Voucher Logs.",
+        "apiStructure": "REST API endpoints for multi-step approval state updates, division routing, and status tracking.",
+        "securityAndRBAC": "Role-based access controls for Requesting Staff, Division Chiefs, Regional Directors, and ICT Administrators.",
+        "validationAndAudit": "Multi-tier approval validation rules enforcing division approval order and immutable audit trails."
+      },
+      "keyFeatures": [
+        "Digitized Internal Agency Service Request Routing",
+        "Automated Staff Travel Order Application & Multi-Tier Approval Engine",
+        "Dynamic High-Resolution PDF Travel Order & Voucher Generation",
+        "Division Approval Status Dashboard & Audit Logs",
+        "Engineered during ICT Software Engineer Internship (OJT) at Department of Agriculture"
+      ],
+      "challengesAndSolutions": {
+        "challenge": "Digitizing legacy government paper forms into a strict multi-tier approval hierarchy while ensuring non-technical staff could submit and track requests seamlessly.",
+        "solution": "Built a clean step-by-step form interface paired with a dynamic SQL approval status state machine that notifies division chiefs sequentially upon each approval stage."
+      },
+      "impact": "Digitized service request and travel approval workflows for government personnel across 5+ regional agency divisions, cutting approval processing time from 3 days to under 4 hours."
+    }
   }
 ]
