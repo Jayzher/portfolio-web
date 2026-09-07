@@ -114,18 +114,18 @@ export const portfolioData = {
       company: "Classify Inc.",
       location: "Surallah, South Cotabato",
       type: "Professional Experience",
-      description: "Developing and deploying mission-critical educational management platforms, asset management solutions, support ticket systems with task tracking, and school portals.",
+      description: "Engineered, deployed, and delivered comprehensive post-deployment System Support & Technical Operations for enterprise educational management platforms, asset management systems, support ticket tools, and institutional web portals.",
       achievements: [
-        "Architected and deployed an Asset Management System for full lifecycle equipment tracking, barcode categorization, and maintenance auditing.",
-        "Engineered and deployed a unified Ticket Support System with Tasks Management, integrating Kanban task boards, SLA tracking, and resolution escalation workflows.",
-        "Developed and deployed Content Management Systems (CMS) for three educational institutions.",
-        "Collaborated in a 3-developer team on a School Record Management System (RMS), owning designated modules through to completion.",
-        "Designed and developed a System Validation Evaluation (SVE) platform for project quality control, turnover training, evaluation workflows, and certificate generation.",
-        "Delivered ongoing customer support and service for developed systems, including client issue resolution, user training, and post-deployment enhancements.",
-        "Participated in deployment, maintenance, testing, enhancement, and stakeholder support activities.",
-        "Leveraged AI-assisted development tools (GitHub Copilot, Claude, Gemini, Windsurf, Codex) to accelerate development, debugging, documentation, and system design workflows."
+        "Delivered end-to-end System Support & Technical Maintenance for all deployed production projects, handling incident resolution, level-2/3 bug fixes, server maintenance, and performance monitoring.",
+        "Architected and deployed an Asset Management System for full-lifecycle equipment tracking, barcode categorization, stock auditing, and maintenance logs.",
+        "Engineered and supported a unified Ticket Support System with Tasks Management, integrating Kanban task boards, SLA tracking, and issue resolution workflows.",
+        "Provided post-deployment client assistance, user onboarding, technical training, and system optimization for school administrators and institutional stakeholders.",
+        "Collaborated in a 3-developer team to build and continuously support a School Record Management System (RMS), maintaining seamless two-way integration with the LMS.",
+        "Designed, deployed, and supported a System Validation Evaluation (SVE) platform for project quality control, evaluation workflows, and automated certificate generation.",
+        "Developed and maintained Content Management Systems (CMS) for 3+ educational institutions, ensuring high availability, security updates, and feature enhancements.",
+        "Leveraged AI-assisted development tools (GitHub Copilot, Claude, Gemini, Windsurf, Codex) to accelerate system diagnostics, root-cause debugging, documentation, and rapid feature deployment."
       ],
-      skills: ["Python", "Django", "React.js", "PostgreSQL", "Tailwind CSS", "REST APIs", "AI Workflows"],
+      skills: ["Python", "Django", "React.js", "PostgreSQL", "Tailwind CSS", "REST APIs", "System Support", "AI Workflows"],
     },
     {
       period: "November 2023 — March 2024",
