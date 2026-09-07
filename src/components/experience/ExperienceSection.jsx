@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Briefcase, Calendar, MapPin, CheckCircle2 } from 'lucide-react'
+import { Briefcase, Calendar, MapPin, CheckCircle2, Award } from 'lucide-react'
 import { portfolioData } from '../../data/portfolioData'
 import useProjectStore from '../../store/projectStore'
 
@@ -17,20 +17,20 @@ export default function ExperienceSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-16"
         >
           <span className="text-xs font-bold uppercase tracking-widest text-accent mb-2 block">
-            Work Experience
+            Engineering Experience & Accomplishments
           </span>
           <h2 className={`text-3xl sm:text-4xl font-extrabold tracking-tight ${
             isDarkMode ? 'text-text-primary' : 'text-text-primary-light'
           }`}>
-            Professional Experience & Internships
+            Professional Experience & Engineering Impact
           </h2>
           <p className={`mt-2 text-sm sm:text-base ${
             isDarkMode ? 'text-text-secondary' : 'text-text-secondary-light'
           }`}>
-            Proven engineering experience building educational platforms, CMS, RMS, and government service systems
+            Action-oriented engineering contributions, database architecture, workflow automation, and post-deployment operations.
           </p>
         </motion.div>
 
@@ -51,37 +51,37 @@ export default function ExperienceSection() {
               {/* Experience Card */}
               <div className={`p-6 sm:p-8 rounded-3xl border transition-all hover:scale-[1.01] ${
                 isDarkMode
-                  ? 'bg-bg-surface border-border hover:border-accent/40'
-                  : 'bg-bg-surface-light border-border-light hover:border-accent/40 shadow-sm'
+                  ? 'bg-bg-surface border-border hover:border-accent/40 shadow-lg'
+                  : 'bg-white border-border-light hover:border-accent/40 shadow-md'
               }`}>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                   <div>
-                    <span className="text-[10px] uppercase font-bold tracking-widest text-accent block mb-1">
+                    <span className="text-[10px] uppercase font-extrabold tracking-widest text-accent block mb-1">
                       {item.type}
                     </span>
-                    <h3 className="text-lg sm:text-xl font-bold text-accent">
-                      {item.role} – {item.company}
+                    <h3 className="text-lg sm:text-xl font-extrabold text-text-primary">
+                      {item.role} <span className="text-accent">@ {item.company}</span>
                     </h3>
                     <div className="flex items-center gap-2 mt-0.5 text-xs font-semibold">
                       <span className={`flex items-center gap-1 font-normal ${
                         isDarkMode ? 'text-text-secondary' : 'text-text-secondary-light'
                       }`}>
-                        <MapPin className="w-3 h-3 text-accent" /> {item.location}
+                        <MapPin className="w-3.5 h-3.5 text-accent" /> {item.location}
                       </span>
                     </div>
                   </div>
 
-                  <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold self-start sm:self-auto border ${
+                  <span className={`inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold self-start sm:self-auto border ${
                     isDarkMode
                       ? 'bg-bg-primary border-border text-text-secondary'
                       : 'bg-bg-primary-light border-border-light text-text-secondary-light'
                   }`}>
-                    <Calendar className="w-3 h-3 text-accent" />
+                    <Calendar className="w-3.5 h-3.5 text-accent" />
                     {item.period}
                   </span>
                 </div>
 
-                <p className={`text-sm leading-relaxed mb-4 ${
+                <p className={`text-xs sm:text-sm leading-relaxed mb-4 ${
                   isDarkMode ? 'text-text-secondary' : 'text-text-secondary-light'
                 }`}>
                   {item.description}
@@ -92,7 +92,7 @@ export default function ExperienceSection() {
                   <div className="space-y-2 mb-5">
                     {item.achievements.map((ach, aIdx) => (
                       <div key={aIdx} className="flex items-start gap-2 text-xs leading-relaxed">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-accent mt-0.5 flex-shrink-0" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 mt-0.5 flex-shrink-0" />
                         <span className={isDarkMode ? 'text-text-secondary' : 'text-text-secondary-light'}>
                           {ach}
                         </span>
@@ -106,10 +106,10 @@ export default function ExperienceSection() {
                   {item.skills.map((skill) => (
                     <span
                       key={skill}
-                      className={`px-2.5 py-0.5 rounded-lg text-xs font-medium ${
+                      className={`px-2.5 py-0.5 rounded-lg text-xs font-semibold ${
                         isDarkMode
-                          ? 'bg-bg-primary text-text-secondary'
-                          : 'bg-bg-primary-light text-text-secondary-light'
+                          ? 'bg-accent/10 text-accent border border-accent/20'
+                          : 'bg-accent/10 text-accent border border-accent/20'
                       }`}
                     >
                       {skill}

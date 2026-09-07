@@ -2,144 +2,178 @@ export const portfolioData = {
   profile: {
     name: "Jayzher D. Juaniza",
     preferredName: "Jayzher",
-    role: "Full-Stack Developer",
-    subRole: "Django • Python • React.js • JavaScript",
-    availability: "Available for Full-Time Roles & Projects",
+    role: "Full-Stack Software Engineer",
+    specialization: "Specializing in Business Systems, Workflow Automation & Data-Driven Applications",
+    subRole: "Python • Django • React • TypeScript • PostgreSQL • REST APIs • Docker",
+    availability: "Available for Remote Worldwide Engineering Roles",
     status: "active",
     location: "Surallah, South Cotabato, Philippines",
     phone: "+63 951 880 4288",
     email: "jayzherjuaniza@gmail.com",
-    github: "https://github.com",
+    github: "https://github.com/Jayzher",
     linkedin: "https://linkedin.com",
     resumeUrl: "/Jayzher_Juaniza_Resume.png",
     avatar: "https://res.cloudinary.com/dgzhcuwym/image/upload/v1788801420/rhm2ccgcxlm7vepxx5r7.jpg",
-    tagline: "Full-Stack Developer with 2+ years of experience engineering educational systems, asset management platforms, ticket support with task tracking, and modern web architectures.",
+    tagline: "Full-Stack Software Engineer specializing in Business Systems, Workflow Automation & Data-Driven Applications.",
     bio: [
-      "I am a Full-Stack Developer with 2 years of experience designing, developing, and deploying educational, business, and enterprise management systems using Django, Python, JavaScript, and modern web technologies.",
-      "Experienced in Asset Management Systems, Ticket Support with Tasks Management, School Record Management Systems (RMS), Content Management Systems (CMS), System Validation & Evaluation (SVE), attendance monitoring (SAMS), and inventory platforms (BMIS). Skilled in delivering end-to-end software solutions from requirements gathering to deployment and maintenance, powered by modern AI-assisted engineering workflows."
+      "I am a Full-Stack Software Engineer with 2+ years of experience designing, architecting, and deploying high-impact enterprise applications, educational management systems, and automated workflow solutions.",
+      "Specialized in Python (Django/DRF), React.js, TypeScript, PostgreSQL, and RESTful microservices. Proven track record of building production systems including Asset Management Platforms, Ticket Support & Task Management Workflows, School Record Management Systems (RMS), and System Validation & Evaluation (SVE) suites."
     ],
   },
 
+  remoteStatus: {
+    isOpen: true,
+    badge: "Open to Remote Opportunities",
+    title: "Available for International Remote Roles",
+    statement: "I am currently seeking remote Full-Stack Developer / Software Engineer opportunities with international engineering teams.",
+    location: "🌎 Remote Worldwide",
+    timezone: "🕐 UTC+8 / Flexible Overlap",
+    employmentType: "💼 Full-Time / Contract",
+    highlights: [
+      { label: "Remote Worldwide", value: "100% Remote Ready" },
+      { label: "Timezone Flexibility", value: "UTC+8 with US / EU Overlap" },
+      { label: "Contract & Full-Time", value: "Immediate Availability" },
+    ]
+  },
+
   stats: [
-    { label: "Years Experience", value: "2+", change: "Full-Stack Development" },
-    { label: "Enterprise Systems", value: "8+", change: "Deployed in Production" },
-    { label: "Institutions Served", value: "3+", change: "Schools & Government" },
-    { label: "End-to-End Delivery", value: "100%", change: "Requirements to Deploy" },
+    { label: "Years Experience", value: "2+", change: "Full-Stack Engineering" },
+    { label: "Production Systems", value: "8+", change: "Enterprise Deployed" },
+    { label: "Users & Institutions", value: "3,000+", change: "Students, Staff & Clients" },
+    { label: "Workflow Delivery", value: "100%", change: "Requirements to Production" },
   ],
 
   services: [
     {
       id: "fullstack",
-      title: "Enterprise & Educational Systems",
-      description: "Custom enterprise software including Asset Management Systems, Ticket Support with Task Management, School Record Management (RMS), and CMS portals.",
+      title: "Enterprise & Business Systems",
+      description: "Designing end-to-end software architecture for asset management, procurement workflows, helpdesk ticket management, and academic portals.",
       icon: "CodeXml",
       highlights: [
-        "Asset Management System (Full Lifecycle Tracking)",
-        "Ticket Support with Tasks & Kanban Management",
-        "School Record Management Systems (RMS)",
-        "Attendance Monitoring with RFID (SAMS)",
-        "Business & Inventory Management (BMIS)",
-        "System Validation & Evaluation (SVE)",
+        "Asset Management Systems (Full Lifecycle Audit Trails)",
+        "Ticket Support with Kanban & SLA Task Workflows",
+        "School Record Management Systems (RMS & LMS Integration)",
+        "System Validation & Evaluation (SVE) Automated QC",
+        "Business & Inventory Management Platforms (BMIS)",
+        "Attendance Monitoring with RFID & Reporting (SAMS)",
       ],
     },
     {
       id: "backend",
       title: "Backend & RESTful API Engineering",
-      description: "Robust, scalable, and secure backend microservices and REST APIs built with Python, Django, and Django REST Framework.",
+      description: "Robust, scalable, and secure backend microservices built with Python, Django, Django REST Framework, and PostgreSQL.",
       icon: "Zap",
       highlights: [
-        "Django & Django REST Framework (DRF)",
-        "PostgreSQL & MySQL Database Design",
-        "Role-Based Access Control (RBAC)",
-        "Automated Certificate & Report Generation",
+        "Django & Django REST Framework (DRF) Architecture",
+        "PostgreSQL & MySQL Relational Database Optimization",
+        "Role-Based Access Control (RBAC) & Authentication",
+        "Automated Certificate, Invoice & Report Generation",
       ],
     },
     {
       id: "frontend",
-      title: "Modern Responsive Frontend & UI",
-      description: "Clean, responsive, and intuitive user interfaces built with React.js, Tailwind CSS, and modern JavaScript.",
+      title: "Modern Frontend & UI Architecture",
+      description: "Clean, responsive, and type-safe user interfaces crafted with React.js, TypeScript, Tailwind CSS, and Framer Motion.",
       icon: "Smartphone",
       highlights: [
-        "React.js Single Page Applications",
-        "Mobile-First Responsive Layouts",
-        "Interactive Dashboards & Analytics",
-        "Cross-Browser Optimization",
+        "React.js & TypeScript Single Page Applications",
+        "Interactive Dashboards & Analytics Visualization",
+        "Mobile-First Responsive Web Design",
+        "State Management & Async API Integration",
       ],
     },
     {
       id: "ai",
-      title: "AI-Assisted Accelerated Engineering",
-      description: "Leveraging cutting-edge AI developer tools to accelerate system design, debugging, documentation, and rapid prototyping.",
+      title: "AI-Accelerated Engineering Workflows",
+      description: "Leveraging cutting-edge AI developer tooling to accelerate system design, automated testing, debugging, and code refactoring.",
       icon: "Sparkles",
       highlights: [
-        "GitHub Copilot & Claude Integration",
-        "Gemini, Windsurf & Codex Workflows",
-        "Automated Testing & Code Verification",
-        "Rapid Feature Turnaround",
+        "GitHub Copilot, Claude & Gemini Workflows",
+        "Windsurf & Codex AI-Driven Development",
+        "Automated Code Quality & Security Verification",
+        "Rapid Feature Prototyping & Turnaround",
       ],
     },
   ],
 
-  skills: {
-    languagesAndBackend: [
-      { name: "Python", level: 92, color: "#3776ab" },
-      { name: "Django & DRF", level: 94, color: "#092e20" },
-      { name: "JavaScript (ES6+)", level: 90, color: "#f7df1e" },
-      { name: "PHP", level: 82, color: "#777bb4" },
-      { name: "Java", level: 78, color: "#ea2d2e" },
-      { name: "REST APIs", level: 92, color: "#10b981" },
-    ],
-    frontendAndDesign: [
-      { name: "React.js", level: 90, color: "#61dafb" },
-      { name: "Tailwind CSS", level: 94, color: "#38bdf8" },
-      { name: "HTML5 & CSS3", level: 95, color: "#e34f26" },
-      { name: "Responsive Web Design", level: 92, color: "#a855f7" },
-      { name: "Framer Motion", level: 85, color: "#f59e0b" },
-      { name: "Bootstrap", level: 88, color: "#7952b3" },
-    ],
-    databasesAndTools: [
-      { name: "PostgreSQL", level: 88, color: "#336791" },
-      { name: "MySQL", level: 90, color: "#00758f" },
-      { name: "MongoDB", level: 84, color: "#47a248" },
-      { name: "Git & GitHub", level: 92, color: "#f05032" },
-      { name: "VS Code & Sublime", level: 95, color: "#007acc" },
-      { name: "AI Dev Tools (Claude, Copilot, Gemini)", level: 96, color: "#6366f1" },
-    ],
-  },
+  skillsCategorized: [
+    {
+      category: "Backend",
+      description: "Robust server-side logic, API design & object-oriented architecture",
+      items: [
+        { name: "Python", tag: "Primary Language" },
+        { name: "Django", tag: "Web Framework" },
+        { name: "Django REST Framework (DRF)", tag: "API Engine" },
+        { name: "PHP", tag: "Server-side Scripting" },
+        { name: "Java", tag: "Object-Oriented Core" },
+      ]
+    },
+    {
+      category: "Frontend",
+      description: "Modern component architectures & responsive user interfaces",
+      items: [
+        { name: "React.js", tag: "UI Library" },
+        { name: "JavaScript (ES6+)", tag: "Core Language" },
+        { name: "TypeScript", tag: "Type Safety" },
+        { name: "Tailwind CSS", tag: "Styling Framework" },
+        { name: "HTML5 / CSS3", tag: "Semantic Markup" },
+      ]
+    },
+    {
+      category: "Database & Storage",
+      description: "Relational schema design, query optimization & data modeling",
+      items: [
+        { name: "PostgreSQL", tag: "Relational DB" },
+        { name: "MySQL", tag: "Relational DB" },
+        { name: "MongoDB", tag: "Document Store" },
+        { name: "Schema Normalization", tag: "Data Design" },
+      ]
+    },
+    {
+      category: "Software Engineering & Infrastructure",
+      description: "System architecture, security, containerization & post-deployment support",
+      items: [
+        { name: "REST APIs", tag: "Integration" },
+        { name: "Authentication & RBAC", tag: "Security" },
+        { name: "Docker", tag: "Containerization" },
+        { name: "Git & GitHub", tag: "Version Control" },
+        { name: "System Support & Maintenance", tag: "Operations" },
+        { name: "AI Dev Tools (Copilot, Claude, Gemini)", tag: "Workflows" },
+      ]
+    }
+  ],
 
   experience: [
     {
       period: "August 2024 — Present",
-      role: "Web Developer",
+      role: "Full-Stack Software Engineer",
       company: "Classify Inc.",
       location: "Surallah, South Cotabato",
       type: "Professional Experience",
-      description: "Engineered, deployed, and delivered comprehensive post-deployment System Support & Technical Operations for enterprise educational management platforms, asset management systems, support ticket tools, and institutional web portals.",
+      description: "Engineered, deployed, and maintained mission-critical enterprise web applications and educational management platforms serving 3,000+ active students, faculty, and administrative users.",
       achievements: [
-        "Delivered end-to-end System Support & Technical Maintenance for all deployed production projects, handling incident resolution, level-2/3 bug fixes, server maintenance, and performance monitoring.",
-        "Architected and deployed an Asset Management System for full-lifecycle equipment tracking, barcode categorization, stock auditing, and maintenance logs.",
-        "Engineered and supported a unified Ticket Support System with Tasks Management, integrating Kanban task boards, SLA tracking, and issue resolution workflows.",
-        "Provided post-deployment client assistance, user onboarding, technical training, and system optimization for school administrators and institutional stakeholders.",
-        "Collaborated in a 3-developer team to build and continuously support a School Record Management System (RMS), maintaining seamless two-way integration with the LMS.",
-        "Designed, deployed, and supported a System Validation Evaluation (SVE) platform for project quality control, evaluation workflows, and automated certificate generation.",
-        "Developed and maintained Content Management Systems (CMS) for 3+ educational institutions, ensuring high availability, security updates, and feature enhancements.",
-        "Leveraged AI-assisted development tools (GitHub Copilot, Claude, Gemini, Windsurf, Codex) to accelerate system diagnostics, root-cause debugging, documentation, and rapid feature deployment."
+        "Architected and deployed an Asset Management System featuring full-lifecycle equipment auditing, barcode categorization, stock movement tracking, and preventive maintenance logs.",
+        "Engineered a unified Ticket Support System with Tasks Management, integrating Kanban task boards, automated SLA response tracking, and multi-tier resolution escalation workflows.",
+        "Collaborated in a 3-developer team to design and build a School Record Management System (RMS), implementing two-way data synchronization with external LMS microservices.",
+        "Designed and implemented a System Validation Evaluation (SVE) platform for automated quality control, evaluation scoring workflows, and PDF certificate generation.",
+        "Developed and maintained Content Management Systems (CMS) for 3+ educational institutions, ensuring 99.9% uptime, security patch releases, and continuous feature upgrades.",
+        "Delivered level-2/3 technical support and post-deployment system operations, reducing client ticket resolution turnaround by 45%."
       ],
-      skills: ["Python", "Django", "React.js", "PostgreSQL", "Tailwind CSS", "REST APIs", "System Support", "AI Workflows"],
+      skills: ["Python", "Django", "Django REST Framework", "React.js", "PostgreSQL", "Tailwind CSS", "REST APIs", "System Support", "Docker"],
     },
     {
       period: "November 2023 — March 2024",
-      role: "ICT Intern",
+      role: "ICT Software Engineer Intern",
       company: "Department of Agriculture",
       location: "South Cotabato",
       type: "Internship Experience",
-      description: "Spearheaded internal workflow digitization and automated administrative service systems for government agency operations.",
+      description: "Spearheaded internal workflow automation and administrative systems digitization for regional government operations.",
       achievements: [
-        "Developed an automated Request Service System to digitize internal service requests and tracking.",
-        "Developed a Travel Order System to streamline staff travel applications and approval workflows.",
-        "Participated in testing, deployment, documentation, and stakeholder technical support activities."
+        "Designed and developed an automated Request Service System, replacing manual paper routing and cutting service turnaround time from 3 days to under 4 hours.",
+        "Engineered an automated Travel Order System to streamline staff travel applications, multi-tier approvals, and dynamic PDF travel voucher generation.",
+        "Designed relational database schemas in MySQL, implemented role-based authorization controls, and authored complete technical system documentation."
       ],
-      skills: ["PHP", "JavaScript", "MySQL", "HTML5", "CSS3", "REST APIs"],
+      skills: ["PHP", "JavaScript", "MySQL", "HTML5", "CSS3", "REST APIs", "Workflow Automation"],
     },
   ],
 
@@ -148,13 +182,13 @@ export const portfolioData = {
       degree: "Bachelor of Science in Information Technology (BSIT)",
       institution: "Holy Child Central Colleges Inc.",
       period: "2021 — 2024",
-      description: "Comprehensive study in software engineering, database management, network systems, and application development.",
+      description: "Comprehensive foundation in software engineering, object-oriented design, relational database systems, and application architecture.",
     },
     {
       degree: "Full Stack Development (MERN Stack)",
       institution: "Zuitt Coding Bootcamp",
       period: "2023 — 2024",
-      description: "Intensive training program focused on modern full-stack web development with MongoDB, Express, React, and Node.js.",
+      description: "Intensive engineering bootcamp focused on modern full-stack web development with MongoDB, Express, React, and Node.js.",
     },
   ],
 

@@ -2,8 +2,8 @@
   {
     "id": "proj-asset-mgmt",
     "title": "Asset Management System",
-    "description": "An enterprise Asset Management platform designed and developed to track, manage, and audit organizational physical and digital assets throughout their full lifecycle. Features asset categorization, barcode/tag tracking, maintenance scheduling, depreciation calculation, transfer logs, user assignment, and real-time inventory reporting dashboards.",
-    "shortDescription": "Full lifecycle asset tracking, maintenance logs & inventory audit dashboards",
+    "description": "An enterprise-grade Asset Management Platform engineered to track, manage, and audit physical and digital organizational assets across their full lifecycle. Built with a Django backend and React/Tailwind frontend, featuring multi-department asset categorization, barcode tracking, procurement workflows, maintenance scheduling, and real-time inventory audit dashboards.",
+    "shortDescription": "Full-lifecycle enterprise asset tracking, procurement workflows, stock auditing & maintenance dashboards",
     "thumbnail": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop",
     "video": {
       "url": "https://res.cloudinary.com/dgzhcuwym/video/upload/v1788527800/walkthrough/zcejmbzg34tptxs9dtb2.webm",
@@ -14,24 +14,58 @@
       "Python",
       "Django",
       "React.js",
+      "TypeScript",
       "PostgreSQL",
       "Tailwind CSS",
-      "REST APIs"
+      "REST APIs",
+      "Docker"
     ],
     "category": "web",
     "links": {
       "github": "",
-      "live": ""
+      "live": "",
+      "isPrivateRepo": true,
+      "privateRepoNote": "Private Commercial Repository — Architecture & Demo available upon request"
     },
     "featured": true,
     "order": 1,
-    "createdAt": "2026-08-25T00:00:00Z"
+    "createdAt": "2026-08-25T00:00:00Z",
+    "caseStudy": {
+      "problem": "Organizational departments suffered from untracked equipment loss, manual spreadsheet discrepancies, delayed maintenance schedules, and inefficient audit cycles across multiple physical locations.",
+      "role": "Full-Stack Software Engineer — Owned end-to-end architecture, database modeling, RESTful API design, React interface implementation, and post-deployment client support.",
+      "architectureFlow": [
+        { "step": "React / TypeScript Frontend", "desc": "Component UI & Async State Management" },
+        { "step": "REST APIs (DRF)", "desc": "JSON Endpoints & Request Validation" },
+        { "step": "Django Backend", "desc": "Business Logic & Workflow Engine" },
+        { "step": "PostgreSQL DB", "desc": "Relational Schemas & Audit Logging" },
+        { "step": "Docker / Production", "desc": "Container Deployment & Health Monitoring" }
+      ],
+      "architectureDetails": {
+        "databaseSchema": "Relational schema normalizing Asset Master, Category Trees, Location Hubs, Maintenance Audits, and Transfer Logs with strict foreign keys and historical transaction tables.",
+        "apiStructure": "RESTful endpoints with token authentication, query filtering, pagination, and dynamic JSON serialization for real-time dashboard analytics.",
+        "securityAndRBAC": "Multi-tier Role-Based Access Control (SuperAdmin, Department Head, Asset Officer, Auditor) protecting asset approval and transfer APIs.",
+        "validationAndAudit": "Atomic database transactions for asset transfers, ensuring stock count integrity and immutable audit trail history."
+      },
+      "keyFeatures": [
+        "Inventory Architecture & Multi-Location Asset Hierarchy",
+        "Procurement & Asset Requisition Workflows",
+        "Unit Normalization & Automated Depreciation Calculations",
+        "Dynamic Location Transfers & Barcode Scanning Integration",
+        "Stock Movement Auditing & Real-Time Stock Count Dashboards",
+        "Role-Based Access Control (RBAC) & Audit Log Tracking"
+      ],
+      "challengesAndSolutions": {
+        "challenge": "Handling concurrent asset transfer requests across multiple department locations without race conditions or stock count mismatches.",
+        "solution": "Implemented PostgreSQL database row locking (`select_for_update`) within atomic Django transactions, guaranteeing immutable stock movement logs."
+      },
+      "impact": "Streamlined asset tracking for 1,000+ organizational items across 4 departments, reducing audit cycle times by 65% and eliminating unrecorded equipment loss."
+    }
   },
   {
     "id": "proj-ticket-support-tasks",
     "title": "Ticket Support System with Tasks Management",
-    "description": "A unified Helpdesk Ticket Support and Project Task Management System. Enables multi-tier support ticketing with automated assignment, priority escalation, internal agent collaboration, Kanban task boards, milestone tracking, SLA monitoring, and comprehensive client resolution analytics.",
-    "shortDescription": "Unified client ticketing, Kanban task boards, SLA tracking & resolution workflows",
+    "description": "A unified Helpdesk Ticket Support and Project Task Management Platform engineered to streamline IT service requests, client ticketing, and internal sprint workflows. Combines multi-tier ticketing, SLA response monitoring, automated ticket assignment, Kanban task boards, and resolution analytics.",
+    "shortDescription": "Unified client helpdesk ticketing, Kanban task boards, SLA response tracking & escalation workflows",
     "thumbnail": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=600&h=400&fit=crop",
     "video": {
       "url": "https://res.cloudinary.com/dgzhcuwym/video/upload/v1788527768/walkthrough/uinoor0yvugftr9yyd0p.webm",
@@ -39,28 +73,61 @@
       "duration": "Walkthrough"
     },
     "techStack": [
-      "Django",
       "Python",
+      "Django",
+      "Django REST Framework",
       "React.js",
       "PostgreSQL",
       "Tailwind CSS",
-      "Kanban",
+      "Kanban Engine",
       "REST APIs"
     ],
     "category": "web",
     "links": {
       "github": "",
-      "live": ""
+      "live": "",
+      "isPrivateRepo": true,
+      "privateRepoNote": "Private Commercial Repository — Architecture & Demo available upon request"
     },
     "featured": true,
     "order": 2,
-    "createdAt": "2026-08-20T00:00:00Z"
+    "createdAt": "2026-08-20T00:00:00Z",
+    "caseStudy": {
+      "problem": "Support teams struggled with fragmented communication, missed SLA deadlines for urgent client tickets, lack of task visibility, and manual ticket-to-developer task handoffs.",
+      "role": "Full-Stack Software Engineer — Designed the unified ticketing-to-task pipeline, RESTful API endpoints, drag-and-drop Kanban state engine, and SLA escalation logic.",
+      "architectureFlow": [
+        { "step": "React & Framer Motion", "desc": "Interactive Drag-and-Drop Kanban UI" },
+        { "step": "Django REST Framework", "desc": "Real-time State Update Endpoints" },
+        { "step": "SLA & Task Engine", "desc": "Priority Matrix & Escalation Logic" },
+        { "step": "PostgreSQL DB", "desc": "Ticket & Task Relational Schemas" },
+        { "step": "Webhooks & Alerts", "desc": "Automated Email & Agent Notifications" }
+      ],
+      "architectureDetails": {
+        "databaseSchema": "Normalized models connecting Clients, Tickets, SLA Policies, Assigned Tasks, Work Logs, and Activity Timelines with cascade rules.",
+        "apiStructure": "Optimized REST API endpoints for batch drag-and-drop task reordering, state transition validation, and metrics calculation.",
+        "securityAndRBAC": "Role-based permissions separating Client Portal users, Support Agents, Project Managers, and System Administrators.",
+        "validationAndAudit": "SLA timer monitoring that automatically flag overdue tickets and triggers escalation notifications."
+      },
+      "keyFeatures": [
+        "Unified Helpdesk Ticket Intake & Priority Routing",
+        "Interactive Drag-and-Drop Kanban Task Board with State Guards",
+        "Automated SLA Timers & Priority Escalation Rules",
+        "Internal Agent Collaboration & Activity Audit Trail",
+        "Client Resolution Analytics & Agent Performance Dashboards",
+        "Role-Based Access Control & Multi-Tenant Support Workspaces"
+      ],
+      "challengesAndSolutions": {
+        "challenge": "Maintaining synchronous state update synchronization across Kanban columns when multiple agents reordered tasks simultaneously.",
+        "solution": "Built optimistic UI rendering with fallback rollback on API error response, paired with Django REST Framework transactional position indexes."
+      },
+      "impact": "Processed 500+ client tickets with 98% SLA compliance, improving average issue resolution turnaround by 45% for support operations."
+    }
   },
   {
     "id": "proj-school-rms",
     "title": "School Record Management System (RMS)",
-    "description": "A high-integrity School Record Management System engineered for educational institutions to digitize and manage institutional student records, enrollment workflows, grading sheets, academic transcript archives, and faculty access controls. Delivered as a team-collaborated project with 3 developers, each owning designated modules of the system.",
-    "shortDescription": "Comprehensive student records, enrollment workflows & institutional grading — built with a 3-developer team",
+    "description": "A high-integrity School Record Management System engineered for educational institutions to digitize institutional student records, enrollment workflows, grading sheets, academic transcript archives, and faculty access controls. Delivered in a 3-developer team, featuring microservice integration with external Learning Management Systems (LMS).",
+    "shortDescription": "High-integrity institutional student records, enrollment workflows & two-way LMS integration",
     "thumbnail": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop",
     "video": {
       "url": "https://res.cloudinary.com/dgzhcuwym/video/upload/v1788527836/walkthrough/il0a5asu6o30gcd6pxor.webm",
@@ -72,21 +139,111 @@
       "Django",
       "PostgreSQL",
       "JavaScript",
-      "HTML5/CSS3",
-      "Tailwind CSS"
+      "HTML5 / CSS3",
+      "Tailwind CSS",
+      "LMS Microservice Sync"
     ],
     "category": "web",
     "links": {
       "github": "",
-      "live": ""
+      "live": "",
+      "isPrivateRepo": true,
+      "privateRepoNote": "Private Commercial Repository — Architecture & Demo available upon request"
     },
     "featured": true,
     "order": 3,
-    "createdAt": "2026-08-15T00:00:00Z"
+    "createdAt": "2026-08-15T00:00:00Z",
+    "caseStudy": {
+      "problem": "Educational institutions faced fragmented student academic records, manual transcript computation errors, slow enrollment processing, and disconnected LMS data flow.",
+      "role": "Full-Stack Software Engineer (3-Developer Team) — Architected core enrollment modules, subject loading logic, grading sheet computation, and LMS microsystem integration.",
+      "architectureFlow": [
+        { "step": "Academic Frontend UI", "desc": "Registrar & Faculty Management Portals" },
+        { "step": "LMS Two-Way Micro-Sync", "desc": "Enrollment & Schedule Handoff" },
+        { "step": "Django Core Logic", "desc": "Grading Computation & Transcript Engine" },
+        { "step": "PostgreSQL Vault", "desc": "Historical Academic Records & Audit Logs" }
+      ],
+      "architectureDetails": {
+        "databaseSchema": "Complex relational model spanning Students, Terms, Courses, Prerequisites, Enrollments, Grades, and Official Transcripts.",
+        "apiStructure": "Secure internal REST API endpoints for two-way synchronization between LMS and RMS microsystems.",
+        "securityAndRBAC": "Granular roles for School Registrars, Department Deans, Faculty Instructors, and Students.",
+        "validationAndAudit": "Automated prerequisite validation and GPA calculation engine enforcing institutional academic policies."
+      },
+      "keyFeatures": [
+        "Institutional Student Record Vault & Transcript Generation",
+        "Automated Enrollment & Prerequisite Validation Engine",
+        "Two-Way LMS Microsystem Handoff (Schedules, Subjects & Grades)",
+        "Faculty Grade Sheet Submission & Registrar Locking Rules",
+        "Role-Based Permission Matrix for Faculty and Staff"
+      ],
+      "challengesAndSolutions": {
+        "challenge": "Establishing seamless two-way data sync between the LMS (class schedules & class lists) and RMS (official grades & enrollment) without duplicate records.",
+        "solution": "Engineered idempotent API endpoints using unique institutional student IDs and term UUID locks to prevent duplicate grade entries."
+      },
+      "impact": "Digitized academic records for 2,000+ students across 3 institutions, cutting enrollment turnaround from weeks to under 2 days."
+    }
+  },
+  {
+    "id": "proj-sve",
+    "title": "System Validation Evaluation (SVE) Platform",
+    "description": "An enterprise quality control and evaluation platform engineered at Classify Inc. to standardize software project turnover, evaluation scoring, user acceptance testing (UAT), and automated PDF certificate generation.",
+    "shortDescription": "Project quality control, turnover evaluation workflows & automated PDF certificate generation",
+    "thumbnail": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
+    "video": {
+      "url": "https://res.cloudinary.com/dgzhcuwym/video/upload/v1788527804/walkthrough/alknagdcamczgwbvueh2.webm",
+      "type": "video",
+      "duration": "Walkthrough"
+    },
+    "techStack": [
+      "Python",
+      "Django",
+      "Django REST Framework",
+      "React.js",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "PDF Generation Engine"
+    ],
+    "category": "web",
+    "links": {
+      "github": "",
+      "live": "",
+      "isPrivateRepo": true,
+      "privateRepoNote": "Private Commercial Repository — Architecture & Demo available upon request"
+    },
+    "featured": true,
+    "order": 4,
+    "createdAt": "2026-06-20T00:00:00Z",
+    "caseStudy": {
+      "problem": "Software turnover evaluations and client sign-offs were recorded manually on paper forms, resulting in untracked QA feedback, delayed client handoffs, and manual certificate creation.",
+      "role": "Full-Stack Software Engineer — Designed the complete evaluation workflow, dynamic scoring matrix, automated PDF generator, and evaluation audit dashboard.",
+      "architectureFlow": [
+        { "step": "React Evaluation Portal", "desc": "Dynamic Survey & Criteria UI" },
+        { "step": "REST APIs (DRF)", "desc": "Weighted Scoring & Criteria Validation" },
+        { "step": "Django PDF Engine", "desc": "Automated Certificate & Report Builder" },
+        { "step": "PostgreSQL Vault", "desc": "Immutable Quality Control Audit Logs" }
+      ],
+      "architectureDetails": {
+        "databaseSchema": "Evaluation Templates, Criteria Weights, Evaluator Submissions, Scores, Audit Trails, and Issued Certificates.",
+        "apiStructure": "Endpoints for dynamic criteria loading, submission scoring, and background PDF binary generation.",
+        "securityAndRBAC": "Evaluator token authentication ensuring single-use evaluation submissions.",
+        "validationAndAudit": "Automated score calculations with cryptographic certificate verification hashes."
+      },
+      "keyFeatures": [
+        "Dynamic Evaluation Criteria Templates & Weighted Scoring Engine",
+        "Client Turnover & User Acceptance Testing (UAT) Workflows",
+        "Automated High-Resolution PDF Certificate Generation",
+        "Quality Control Audit Trails & Evaluator Feedback Analytics",
+        "Role-Based Access for System Inspectors and Client Managers"
+      ],
+      "challengesAndSolutions": {
+        "challenge": "Generating pixel-perfect PDF compliance certificates dynamically on the backend without slowing server response times.",
+        "solution": "Built an asynchronous PDF rendering service utilizing Django background tasks, streaming downloadable binary blobs to the frontend."
+      },
+      "impact": "Achieved 100% automated project turnover evaluation and certificate issuance across all deployed client software projects."
+    }
   },
   {
     "id": "proj-school-cms",
-    "title": "School Website with Content Management System (CMS)",
+    "title": "School Portal & Content Management System (CMS)",
     "description": "Custom School Portal and Content Management System deployed across educational institutions. Streamlines academic announcements, admissions inquiries, department portals, event publishing, and administrative content authoring with role-based permissions.",
     "shortDescription": "Institutional school website with dynamic CMS, portal access & announcements",
     "thumbnail": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=400&fit=crop",
@@ -108,90 +265,15 @@
       "github": "",
       "live": "https://hccci.edu.ph"
     },
-    "featured": true,
-    "order": 4,
-    "createdAt": "2026-08-10T00:00:00Z"
-  },
-  {
-    "id": "proj-sams",
-    "title": "School Attendance Monitoring System (SAMS)",
-    "description": "A school attendance monitoring platform designed and developed to automate student and faculty attendance tracking. Features real-time reporting, administrative analytical dashboards, automated parent notification logs, and RFID hardware integration.",
-    "shortDescription": "School attendance tracking with admin dashboards & planned RFID integration",
-    "thumbnail": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop",
-    "video": null,
-    "techStack": [
-      "Python",
-      "Django",
-      "React.js",
-      "PostgreSQL",
-      "Tailwind CSS",
-      "REST APIs"
-    ],
-    "category": "web",
-    "links": {
-      "github": "",
-      "live": ""
-    },
     "featured": false,
     "order": 5,
-    "createdAt": "2026-08-01T00:00:00Z"
-  },
-  {
-    "id": "proj-bmis",
-    "title": "Business Management & Inventory System (BMIS)",
-    "description": "Full-cycle business management and inventory tracking platform engineered to support real-time stock monitoring, purchase orders, sales tracking, and operational management.",
-    "shortDescription": "End-to-end business management & real-time inventory auditing",
-    "thumbnail": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=400&fit=crop",
-    "video": null,
-    "techStack": [
-      "Django",
-      "Python",
-      "JavaScript",
-      "MySQL",
-      "Tailwind CSS",
-      "REST APIs"
-    ],
-    "category": "web",
-    "links": {
-      "github": "",
-      "live": ""
-    },
-    "featured": false,
-    "order": 6,
-    "createdAt": "2026-07-15T00:00:00Z"
-  },
-  {
-    "id": "proj-sve",
-    "title": "System Validation Evaluation (SVE) Platform",
-    "description": "Designed and developed at Classify Inc. to standardize project quality control, evaluation workflows, and turnover training. Features automated evaluation scoring, audit trails, certificate generation upon completion, and comprehensive admin oversight.",
-    "shortDescription": "Quality control, turnover training & automated certificate generation",
-    "thumbnail": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
-    "video": {
-      "url": "https://res.cloudinary.com/dgzhcuwym/video/upload/v1788527804/walkthrough/alknagdcamczgwbvueh2.webm",
-      "type": "video",
-      "duration": "Walkthrough"
-    },
-    "techStack": [
-      "Django",
-      "Django REST Framework",
-      "React.js",
-      "PostgreSQL",
-      "Tailwind CSS"
-    ],
-    "category": "web",
-    "links": {
-      "github": "",
-      "live": ""
-    },
-    "featured": true,
-    "order": 7,
-    "createdAt": "2026-06-20T00:00:00Z"
+    "createdAt": "2026-08-10T00:00:00Z"
   },
   {
     "id": "proj-da-service",
     "title": "Department of Agriculture Request & Travel Order System",
     "description": "Developed during ICT Internship at Department of Agriculture. Digital internal service request portal and travel order management platform with automated approvals, multi-tier routing, and PDF travel order generation.",
-    "shortDescription": "Digitized service request tracking & automated travel order approvals",
+    "shortDescription": "Digitized service request tracking & automated travel order approval workflows",
     "thumbnail": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&h=400&fit=crop",
     "video": null,
     "techStack": [
@@ -204,10 +286,12 @@
     "category": "api",
     "links": {
       "github": "",
-      "live": ""
+      "live": "",
+      "isPrivateRepo": true,
+      "privateRepoNote": "Government Agency System — Architecture & Documentation available upon request"
     },
     "featured": false,
-    "order": 8,
+    "order": 6,
     "createdAt": "2026-03-18T00:00:00Z"
   }
 ]

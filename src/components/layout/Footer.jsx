@@ -1,4 +1,4 @@
-import { CodeXml, Briefcase, MessageCircle, Mail, Heart, ArrowUp } from 'lucide-react'
+import { CodeXml, Briefcase, Mail, ArrowUp, Lock, ExternalLink } from 'lucide-react'
 import { portfolioData } from '../../data/portfolioData'
 import useProjectStore from '../../store/projectStore'
 
@@ -15,11 +15,44 @@ export default function Footer() {
       className={`border-t py-12 transition-colors ${
         isDarkMode
           ? 'bg-bg-surface border-border'
-          : 'bg-bg-surface-light border-border-light'
+          : 'bg-white border-border-light'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        
+        {/* GitHub Presentation Banner (Requirement #8) */}
+        <div className={`p-6 rounded-3xl border flex flex-col md:flex-row items-center justify-between gap-4 ${
+          isDarkMode
+            ? 'bg-bg-primary border-border/80 text-text-primary'
+            : 'bg-gray-50 border-border-light text-gray-900'
+        }`}>
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-2xl bg-accent/15 border border-accent/30 flex items-center justify-center text-accent flex-shrink-0">
+              <CodeXml className="w-6 h-6" />
+            </div>
+            <div>
+              <h4 className="font-extrabold text-sm sm:text-base">
+                GitHub Repository & Code Policy Notice
+              </h4>
+              <p className="text-xs text-text-secondary mt-0.5 max-w-2xl">
+                My GitHub profile hosts public source code, walkthrough demonstrations, and personal projects. Production enterprise projects deployed at Classify Inc. and government agencies remain under non-disclosure agreements (NDA); architecture diagrams and technical documentation are available upon request.
+              </p>
+            </div>
+          </div>
+
+          <a
+            href={profile.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-xl bg-accent text-white font-semibold text-xs hover:bg-accent-hover transition-colors shadow-md"
+          >
+            <CodeXml className="w-4 h-4" />
+            Visit github.com/Jayzher
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-4">
           
           {/* Branding */}
           <div className="text-center md:text-left">
@@ -31,7 +64,7 @@ export default function Footer() {
             <p className={`text-xs mt-1 ${
               isDarkMode ? 'text-text-secondary' : 'text-text-secondary-light'
             }`}>
-              {profile.role} • {profile.location}
+              {profile.role} • {profile.specialization}
             </p>
           </div>
 
@@ -92,7 +125,7 @@ export default function Footer() {
           <p className={`text-xs flex items-center justify-center gap-1.5 ${
             isDarkMode ? 'text-text-secondary' : 'text-text-secondary-light'
           }`}>
-            © {new Date().getFullYear()} {profile.name}. All rights reserved. Designed & built with React 19, Tailwind CSS & Framer Motion.
+            © {new Date().getFullYear()} {profile.name} — Full-Stack Software Engineer. All rights reserved. Built with React 19, Tailwind CSS & Framer Motion.
           </p>
         </div>
       </div>
