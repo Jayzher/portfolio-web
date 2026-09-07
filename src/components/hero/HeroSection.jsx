@@ -42,7 +42,7 @@ export default function HeroSection() {
         >
           <div className="relative">
             <img
-              src={profile.Profile}
+              src={profile.avatar}
               alt={profile.name}
               className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover border-4 border-accent/40 shadow-xl shadow-accent/20 mx-auto"
             />
