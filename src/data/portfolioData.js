@@ -17,7 +17,7 @@ export const portfolioData = {
     tagline: "Full-Stack Software Engineer specializing in Business Systems, Workflow Automation & Data-Driven Applications.",
     bio: [
       "I am a Full-Stack Software Engineer with 2+ years of experience designing, architecting, and deploying high-impact enterprise applications, educational management systems, and automated workflow solutions.",
-      "Specialized in Python (Django/DRF), React.js, TypeScript, PostgreSQL, and RESTful microservices. Proven track record of building production systems including Asset Management Platforms, Ticket Support & Task Management Workflows, School Record Management Systems (RMS), and System Validation & Evaluation (SVE) suites."
+      "Specialized in Python (Django/DRF), React.js, TypeScript, PostgreSQL, Single-Codebase Multi-Tenancy Architecture, and RESTful microservices. Proven track record of building production systems including Asset Management Platforms, Multi-Tenant Ticket Support & Task Workflows, School Record Management Systems (RMS), and System Validation & Evaluation (SVE) suites."
     ],
   },
 
@@ -47,15 +47,15 @@ export const portfolioData = {
     {
       id: "fullstack",
       title: "Enterprise & Business Systems",
-      description: "Designing end-to-end software architecture for asset management, procurement workflows, helpdesk ticket management, and academic portals.",
+      description: "Designing end-to-end software architecture for asset management, single-codebase multi-tenant portals, helpdesk ticket management, and academic systems.",
       icon: "CodeXml",
       highlights: [
+        "Single Codebase Multi-Tenancy System Architecture",
         "Asset Management Systems (Full Lifecycle Audit Trails)",
-        "Ticket Support with Kanban & SLA Task Workflows",
+        "Multi-Tenant Ticket Support with Kanban & SLA Workflows",
         "School Record Management Systems (RMS & LMS Integration)",
         "System Validation & Evaluation (SVE) Automated QC",
         "Business & Inventory Management Platforms (BMIS)",
-        "Attendance Monitoring with RFID & Reporting (SAMS)",
       ],
     },
     {
@@ -65,6 +65,7 @@ export const portfolioData = {
       icon: "Zap",
       highlights: [
         "Django & Django REST Framework (DRF) Architecture",
+        "Single Codebase Multi-Tenancy Schema & Tenant Routing",
         "PostgreSQL & MySQL Relational Database Optimization",
         "Role-Based Access Control (RBAC) & Authentication",
         "Automated Certificate, Invoice & Report Generation",
@@ -77,6 +78,7 @@ export const portfolioData = {
       icon: "Smartphone",
       highlights: [
         "React.js & TypeScript Single Page Applications",
+        "Multi-Tenant Workspace & Client Organization UI",
         "Interactive Dashboards & Analytics Visualization",
         "Mobile-First Responsive Web Design",
         "State Management & Async API Integration",
@@ -121,23 +123,24 @@ export const portfolioData = {
     },
     {
       category: "Database & Storage",
-      description: "Relational schema design, query optimization & data modeling",
+      description: "Relational schema design, query optimization & multi-tenant data modeling",
       items: [
         { name: "PostgreSQL", tag: "Relational DB" },
         { name: "MySQL", tag: "Relational DB" },
         { name: "MongoDB", tag: "Document Store" },
-        { name: "Schema Normalization", tag: "Data Design" },
+        { name: "Multi-Tenant Schemas", tag: "Architecture" },
       ]
     },
     {
       category: "Software Engineering & Infrastructure",
-      description: "System architecture, security, containerization & post-deployment support",
+      description: "Single codebase multi-tenancy, security, containerization & post-deployment support",
       items: [
+        { name: "Single Codebase Multi-Tenancy", tag: "Architecture" },
         { name: "REST APIs", tag: "Integration" },
         { name: "Authentication & RBAC", tag: "Security" },
         { name: "Docker", tag: "Containerization" },
         { name: "Git & GitHub", tag: "Version Control" },
-        { name: "System Support & Maintenance", tag: "Operations" },
+        { name: "System Support & Operations", tag: "Maintenance" },
         { name: "AI Dev Tools (Copilot, Claude, Gemini)", tag: "Workflows" },
       ]
     }
@@ -150,16 +153,16 @@ export const portfolioData = {
       company: "Classify Inc.",
       location: "Surallah, South Cotabato",
       type: "Professional Experience",
-      description: "Engineered, deployed, and maintained mission-critical enterprise web applications and educational management platforms serving 3,000+ active students, faculty, and administrative users.",
+      description: "Engineered, deployed, and maintained mission-critical enterprise web applications and educational management platforms serving 3,000+ active students, faculty, and administrative users across multiple client tenants.",
       achievements: [
         "Architected and deployed an Asset Management System featuring full-lifecycle equipment auditing, barcode categorization, stock movement tracking, and preventive maintenance logs.",
-        "Engineered a unified Ticket Support System with Tasks Management, integrating Kanban task boards, automated SLA response tracking, and multi-tier resolution escalation workflows.",
-        "Collaborated in a 3-developer team to design and build a School Record Management System (RMS), implementing two-way data synchronization with external LMS microservices.",
+        "Engineered a unified Ticket Support System with Tasks Management built on a Single Codebase Multi-Tenancy Architecture, serving multiple client organizations from one codebase with isolated workspace data.",
+        "Collaborated in a 3-developer team to design and build a multi-tenant School Record Management System (RMS), implementing two-way data synchronization with external LMS microservices from a single codebase deployment.",
         "Designed and implemented a System Validation Evaluation (SVE) platform for automated quality control, evaluation scoring workflows, and PDF certificate generation.",
         "Developed and maintained Content Management Systems (CMS) for 3+ educational institutions, ensuring 99.9% uptime, security patch releases, and continuous feature upgrades.",
         "Delivered level-2/3 technical support and post-deployment system operations, reducing client ticket resolution turnaround by 45%."
       ],
-      skills: ["Python", "Django", "Django REST Framework", "React.js", "PostgreSQL", "Tailwind CSS", "REST APIs", "System Support", "Docker"],
+      skills: ["Python", "Django", "Django REST Framework", "Multi-Tenancy", "Single Codebase Architecture", "React.js", "PostgreSQL", "Tailwind CSS", "REST APIs", "Docker"],
     },
     {
       period: "November 2023 — March 2024",

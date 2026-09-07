@@ -2,8 +2,8 @@
   {
     "id": "proj-asset-mgmt",
     "title": "Asset Management System",
-    "description": "An enterprise-grade Asset Management Platform engineered to track, manage, and audit physical and digital organizational assets across their full lifecycle. Built with a Django backend and React/Tailwind frontend, featuring multi-department asset categorization, barcode tracking, procurement workflows, maintenance scheduling, and real-time inventory audit dashboards.",
-    "shortDescription": "Full-lifecycle enterprise asset tracking, procurement workflows, stock auditing & maintenance dashboards",
+    "description": "An enterprise-grade Asset Management Platform engineered on a Single Codebase Multi-Tenancy Architecture to track, manage, and audit physical and digital organizational assets across their full lifecycle. Serves multiple departments and organization clients from a single deployment while ensuring complete tenant data isolation, barcode tracking, procurement workflows, maintenance scheduling, and real-time inventory audit dashboards.",
+    "shortDescription": "Single codebase multi-tenant enterprise asset tracking, procurement workflows, stock auditing & maintenance dashboards",
     "thumbnail": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop",
     "video": {
       "url": "https://res.cloudinary.com/dgzhcuwym/video/upload/v1788527800/walkthrough/zcejmbzg34tptxs9dtb2.webm",
@@ -16,6 +16,8 @@
       "React.js",
       "TypeScript",
       "PostgreSQL",
+      "Multi-Tenancy",
+      "Single Codebase Architecture",
       "Tailwind CSS",
       "REST APIs",
       "Docker"
@@ -31,22 +33,23 @@
     "order": 1,
     "createdAt": "2026-08-25T00:00:00Z",
     "caseStudy": {
-      "problem": "Organizational departments suffered from untracked equipment loss, manual spreadsheet discrepancies, delayed maintenance schedules, and inefficient audit cycles across multiple physical locations.",
-      "role": "Full-Stack Software Engineer — Owned end-to-end architecture, database modeling, RESTful API design, React interface implementation, and post-deployment client support.",
+      "problem": "Organizational departments and client entities suffered from untracked equipment loss, manual spreadsheet discrepancies, delayed maintenance schedules, and maintaining separate codebase deployments across multiple physical locations.",
+      "role": "Full-Stack Software Engineer — Owned end-to-end single codebase multi-tenancy architecture, database modeling, RESTful API design, React interface implementation, and post-deployment client support.",
       "architectureFlow": [
         { "step": "React / TypeScript Frontend", "desc": "Component UI & Async State Management" },
-        { "step": "REST APIs (DRF)", "desc": "JSON Endpoints & Request Validation" },
-        { "step": "Django Backend", "desc": "Business Logic & Workflow Engine" },
-        { "step": "PostgreSQL DB", "desc": "Relational Schemas & Audit Logging" },
-        { "step": "Docker / Production", "desc": "Container Deployment & Health Monitoring" }
+        { "step": "Multi-Tenant Router", "desc": "Single Codebase Tenant Context Dispatcher" },
+        { "step": "REST APIs (DRF)", "desc": "Tenant-Scoped JSON Endpoints & Validation" },
+        { "step": "Django Backend Engine", "desc": "Unified Single Codebase & Business Logic" },
+        { "step": "PostgreSQL Multi-Tenant DB", "desc": "Tenant Data Isolation & Audit Logging" }
       ],
       "architectureDetails": {
-        "databaseSchema": "Relational schema normalizing Asset Master, Category Trees, Location Hubs, Maintenance Audits, and Transfer Logs with strict foreign keys and historical transaction tables.",
-        "apiStructure": "RESTful endpoints with token authentication, query filtering, pagination, and dynamic JSON serialization for real-time dashboard analytics.",
-        "securityAndRBAC": "Multi-tier Role-Based Access Control (SuperAdmin, Department Head, Asset Officer, Auditor) protecting asset approval and transfer APIs.",
-        "validationAndAudit": "Atomic database transactions for asset transfers, ensuring stock count integrity and immutable audit trail history."
+        "databaseSchema": "Single codebase multi-tenant relational schema normalizing Asset Master, Category Trees, Location Hubs, Maintenance Audits, and Transfer Logs with dynamic tenant scoping and historical transaction isolation.",
+        "apiStructure": "Tenant-aware RESTful endpoints with token authentication, query filtering, pagination, and dynamic JSON serialization for real-time dashboard analytics.",
+        "securityAndRBAC": "Multi-tenant Role-Based Access Control (SuperAdmin, Organization Tenant Admin, Department Head, Asset Officer, Auditor) protecting tenant asset approval and transfer APIs.",
+        "validationAndAudit": "Atomic database transactions for asset transfers with strict tenant isolation, ensuring stock count integrity and immutable audit trail history."
       },
       "keyFeatures": [
+        "Single Codebase Multi-Tenancy Architecture (Tenant Data Isolation & Department Scoping)",
         "Inventory Architecture & Multi-Location Asset Hierarchy",
         "Procurement & Asset Requisition Workflows",
         "Unit Normalization & Automated Depreciation Calculations",
@@ -55,17 +58,17 @@
         "Role-Based Access Control (RBAC) & Audit Log Tracking"
       ],
       "challengesAndSolutions": {
-        "challenge": "Handling concurrent asset transfer requests across multiple department locations without race conditions or stock count mismatches.",
-        "solution": "Implemented PostgreSQL database row locking (`select_for_update`) within atomic Django transactions, guaranteeing immutable stock movement logs."
+        "challenge": "Handling concurrent asset transfer requests across multiple tenant organizations running on a single unified codebase without cross-tenant data leaks or race conditions.",
+        "solution": "Implemented dynamic tenant middleware scoping paired with PostgreSQL row locking (`select_for_update`) within atomic Django transactions, guaranteeing immutable tenant asset movement logs."
       },
-      "impact": "Streamlined asset tracking for 1,000+ organizational items across 4 departments, reducing audit cycle times by 65% and eliminating unrecorded equipment loss."
+      "impact": "Streamlined asset tracking for 1,000+ organizational items across 4 tenant departments on a single codebase deployment, reducing audit cycle times by 65% and eliminating unrecorded equipment loss."
     }
   },
   {
     "id": "proj-ticket-support-tasks",
     "title": "Ticket Support System with Tasks Management",
-    "description": "A unified Helpdesk Ticket Support and Project Task Management Platform engineered to streamline IT service requests, client ticketing, and internal sprint workflows. Combines multi-tier ticketing, SLA response monitoring, automated ticket assignment, Kanban task boards, and resolution analytics.",
-    "shortDescription": "Unified client helpdesk ticketing, Kanban task boards, SLA response tracking & escalation workflows",
+    "description": "A unified Helpdesk Ticket Support and Project Task Management Platform engineered on a Single Codebase Multi-Tenancy Architecture. Designed to serve multiple organization clients and support workspaces from a single deployment while maintaining complete tenant data isolation, dynamic domain routing, SLA response monitoring, Kanban task boards, and resolution analytics.",
+    "shortDescription": "Single codebase multi-tenant client helpdesk ticketing, Kanban task boards, SLA tracking & escalation workflows",
     "thumbnail": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=600&h=400&fit=crop",
     "video": {
       "url": "https://res.cloudinary.com/dgzhcuwym/video/upload/v1788527768/walkthrough/uinoor0yvugftr9yyd0p.webm",
@@ -78,7 +81,8 @@
       "Django REST Framework",
       "React.js",
       "PostgreSQL",
-      "Tailwind CSS",
+      "Multi-Tenancy",
+      "Single Codebase Architecture",
       "Kanban Engine",
       "REST APIs"
     ],
@@ -93,41 +97,41 @@
     "order": 2,
     "createdAt": "2026-08-20T00:00:00Z",
     "caseStudy": {
-      "problem": "Support teams struggled with fragmented communication, missed SLA deadlines for urgent client tickets, lack of task visibility, and manual ticket-to-developer task handoffs.",
-      "role": "Full-Stack Software Engineer — Designed the unified ticketing-to-task pipeline, RESTful API endpoints, drag-and-drop Kanban state engine, and SLA escalation logic.",
+      "problem": "Support teams struggled with fragmented client communication, maintaining separate client deployments, missed SLA deadlines for urgent tickets, lack of task visibility, and complex multi-organization management.",
+      "role": "Full-Stack Software Engineer — Designed the single codebase multi-tenancy architecture, tenant data isolation filters, ticketing-to-task pipeline, drag-and-drop Kanban state engine, and SLA escalation logic.",
       "architectureFlow": [
-        { "step": "React & Framer Motion", "desc": "Interactive Drag-and-Drop Kanban UI" },
-        { "step": "Django REST Framework", "desc": "Real-time State Update Endpoints" },
-        { "step": "SLA & Task Engine", "desc": "Priority Matrix & Escalation Logic" },
-        { "step": "PostgreSQL DB", "desc": "Ticket & Task Relational Schemas" },
-        { "step": "Webhooks & Alerts", "desc": "Automated Email & Agent Notifications" }
+        { "step": "React & Framer Motion", "desc": "Multi-Tenant Workspace & Kanban UI" },
+        { "step": "Tenant Dispatcher", "desc": "Domain / Subdomain Tenant Routing" },
+        { "step": "Django REST Framework", "desc": "Tenant-Scoped REST APIs & SLA Engine" },
+        { "step": "Single Codebase Backend", "desc": "Unified Codebase & Business Logic" },
+        { "step": "PostgreSQL Multi-Tenant DB", "desc": "Tenant Schema / Row Isolation Vault" }
       ],
       "architectureDetails": {
-        "databaseSchema": "Normalized models connecting Clients, Tickets, SLA Policies, Assigned Tasks, Work Logs, and Activity Timelines with cascade rules.",
-        "apiStructure": "Optimized REST API endpoints for batch drag-and-drop task reordering, state transition validation, and metrics calculation.",
-        "securityAndRBAC": "Role-based permissions separating Client Portal users, Support Agents, Project Managers, and System Administrators.",
-        "validationAndAudit": "SLA timer monitoring that automatically flag overdue tickets and triggers escalation notifications."
+        "databaseSchema": "Single codebase multi-tenant data architecture using tenant FK scoping & dynamic query middleware to ensure 100% data isolation across client organization workspaces.",
+        "apiStructure": "Tenant-aware REST API endpoints for batch drag-and-drop task reordering, ticket state transitions, and real-time SLA metrics calculation.",
+        "securityAndRBAC": "Granular multi-tenant RBAC enforcing strict role boundaries for Client Organization Users, Support Agents, Tenant Admins, and SuperAdmins.",
+        "validationAndAudit": "Automated SLA timer monitoring with tenant-specific escalation rules and immutable activity audit logging."
       },
       "keyFeatures": [
-        "Unified Helpdesk Ticket Intake & Priority Routing",
-        "Interactive Drag-and-Drop Kanban Task Board with State Guards",
-        "Automated SLA Timers & Priority Escalation Rules",
-        "Internal Agent Collaboration & Activity Audit Trail",
-        "Client Resolution Analytics & Agent Performance Dashboards",
-        "Role-Based Access Control & Multi-Tenant Support Workspaces"
+        "Single Codebase Multi-Tenancy Architecture (Tenant Data Isolation & Workspace Routing)",
+        "Unified Multi-Tenant Helpdesk Ticket Intake & Automated Priority Routing",
+        "Interactive Drag-and-Drop Kanban Task Board with State Transition Guards",
+        "Automated SLA Timers & Multi-Tier Escalation Rules",
+        "Internal Agent Collaboration & Tenant Activity Audit Trails",
+        "Client Resolution Analytics & Tenant Workspace Dashboards"
       ],
       "challengesAndSolutions": {
-        "challenge": "Maintaining synchronous state update synchronization across Kanban columns when multiple agents reordered tasks simultaneously.",
-        "solution": "Built optimistic UI rendering with fallback rollback on API error response, paired with Django REST Framework transactional position indexes."
+        "challenge": "Architecting a single codebase system that serves multiple independent client companies without data cross-contamination or expensive dedicated server overhead per client.",
+        "solution": "Engineered a custom Django middleware that dynamically extracts tenant context from incoming request host headers, automatically scoping all ORM queries and API responses to the active tenant."
       },
-      "impact": "Processed 500+ client tickets with 98% SLA compliance, improving average issue resolution turnaround by 45% for support operations."
+      "impact": "Deployed a single codebase multi-tenant platform serving multiple client organizations, processing 500+ tickets with 98% SLA compliance and reducing deployment maintenance overhead by 70%."
     }
   },
   {
     "id": "proj-school-rms",
     "title": "School Record Management System (RMS)",
-    "description": "A high-integrity School Record Management System engineered for educational institutions to digitize institutional student records, enrollment workflows, grading sheets, academic transcript archives, and faculty access controls. Delivered in a 3-developer team, featuring microservice integration with external Learning Management Systems (LMS).",
-    "shortDescription": "High-integrity institutional student records, enrollment workflows & two-way LMS integration",
+    "description": "A high-integrity School Record Management System (RMS) built on a Single Codebase Multi-Tenancy Architecture. Enables multiple educational institutions and campuses to operate from a single codebase and database infrastructure while maintaining strict institutional student record isolation, enrollment workflows, grading sheets, academic transcript archives, and microservice integration with external LMS portals.",
+    "shortDescription": "Single codebase multi-tenant institutional student records, enrollment workflows & two-way LMS integration",
     "thumbnail": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop",
     "video": {
       "url": "https://res.cloudinary.com/dgzhcuwym/video/upload/v1788527836/walkthrough/il0a5asu6o30gcd6pxor.webm",
@@ -138,6 +142,8 @@
       "Python",
       "Django",
       "PostgreSQL",
+      "Multi-Tenancy",
+      "Single Codebase Architecture",
       "JavaScript",
       "HTML5 / CSS3",
       "Tailwind CSS",
@@ -154,32 +160,34 @@
     "order": 3,
     "createdAt": "2026-08-15T00:00:00Z",
     "caseStudy": {
-      "problem": "Educational institutions faced fragmented student academic records, manual transcript computation errors, slow enrollment processing, and disconnected LMS data flow.",
-      "role": "Full-Stack Software Engineer (3-Developer Team) — Architected core enrollment modules, subject loading logic, grading sheet computation, and LMS microsystem integration.",
+      "problem": "Educational institutions faced fragmented student academic records, separate server deployments per campus, manual transcript computation errors, slow enrollment processing, and disconnected LMS data handoffs.",
+      "role": "Full-Stack Software Engineer (3-Developer Team) — Architected the single codebase multi-tenant campus isolation model, core enrollment workflows, subject loading logic, grading computations, and LMS micro-sync.",
       "architectureFlow": [
-        { "step": "Academic Frontend UI", "desc": "Registrar & Faculty Management Portals" },
-        { "step": "LMS Two-Way Micro-Sync", "desc": "Enrollment & Schedule Handoff" },
+        { "step": "Institutional Frontend UI", "desc": "Registrar & Faculty Management Portals" },
+        { "step": "Multi-Tenant Context Engine", "desc": "Single Codebase Campus Data Isolation" },
+        { "step": "LMS Two-Way Micro-Sync", "desc": "Enrollment, Course & Grade Handoff" },
         { "step": "Django Core Logic", "desc": "Grading Computation & Transcript Engine" },
-        { "step": "PostgreSQL Vault", "desc": "Historical Academic Records & Audit Logs" }
+        { "step": "PostgreSQL Multi-Tenant Vault", "desc": "Historical Academic Records & Audit Logs" }
       ],
       "architectureDetails": {
-        "databaseSchema": "Complex relational model spanning Students, Terms, Courses, Prerequisites, Enrollments, Grades, and Official Transcripts.",
-        "apiStructure": "Secure internal REST API endpoints for two-way synchronization between LMS and RMS microsystems.",
-        "securityAndRBAC": "Granular roles for School Registrars, Department Deans, Faculty Instructors, and Students.",
-        "validationAndAudit": "Automated prerequisite validation and GPA calculation engine enforcing institutional academic policies."
+        "databaseSchema": "Single codebase multi-tenant relational schema supporting multiple school institutions, academic terms, courses, prerequisites, enrollments, grades, and official transcripts with strict tenant FK scoping.",
+        "apiStructure": "Secure tenant-aware REST API endpoints for two-way synchronization between LMS and RMS microsystems.",
+        "securityAndRBAC": "Multi-tenant granular permission matrix separating Institutional Registrars, Department Deans, Faculty Instructors, and Students across school campuses.",
+        "validationAndAudit": "Automated prerequisite validation and GPA calculation engine enforcing tenant-specific academic policies."
       },
       "keyFeatures": [
-        "Institutional Student Record Vault & Transcript Generation",
-        "Automated Enrollment & Prerequisite Validation Engine",
-        "Two-Way LMS Microsystem Handoff (Schedules, Subjects & Grades)",
+        "Single Codebase Multi-Tenancy Architecture (Multi-Institution Data Isolation & Single Codebase Maintenance)",
+        "Institutional Student Record Vault & Transcript Generation Engine",
+        "Automated Enrollment & Prerequisite Validation Workflow",
+        "Two-Way LMS Microsystem Handoff (Class Lists, Schedules, Subjects & Grades)",
         "Faculty Grade Sheet Submission & Registrar Locking Rules",
-        "Role-Based Permission Matrix for Faculty and Staff"
+        "Role-Based Permission Matrix for Multi-Campus Faculty and Staff"
       ],
       "challengesAndSolutions": {
-        "challenge": "Establishing seamless two-way data sync between the LMS (class schedules & class lists) and RMS (official grades & enrollment) without duplicate records.",
-        "solution": "Engineered idempotent API endpoints using unique institutional student IDs and term UUID locks to prevent duplicate grade entries."
+        "challenge": "Synchronizing academic records and course offerings between the LMS and RMS for multiple distinct school institutions running on a single unified codebase.",
+        "solution": "Designed idempotent multi-tenant REST API endpoints utilizing institutional tenant UUID locks and student registration keys, preventing cross-tenant data leaks and duplicate grade submissions."
       },
-      "impact": "Digitized academic records for 2,000+ students across 3 institutions, cutting enrollment turnaround from weeks to under 2 days."
+      "impact": "Digitized academic records for 2,000+ students across 3 educational institutions using a single codebase multi-tenant architecture, cutting enrollment processing time from weeks to under 2 days."
     }
   },
   {
