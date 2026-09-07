@@ -12,7 +12,7 @@ export const portfolioData = {
     github: "https://github.com",
     linkedin: "https://linkedin.com",
     resumeUrl: "/Jayzher_Juaniza_Resume.png",
-    avatar: "/avatar.png",
+    Profile: "/Profile.png",
     tagline: "Full-Stack Developer with 2+ years of experience engineering educational systems, asset management platforms, ticket support with task tracking, and modern web architectures.",
     bio: [
       "I am a Full-Stack Developer with 2 years of experience designing, developing, and deploying educational, business, and enterprise management systems using Django, Python, JavaScript, and modern web technologies.",

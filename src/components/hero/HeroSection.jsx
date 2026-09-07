@@ -33,7 +33,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
-        {/* Avatar Photo */}
+        {/* Profile Photo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -42,7 +42,7 @@ export default function HeroSection() {
         >
           <div className="relative">
             <img
-              src={profile.avatar}
+              src={profile.Profile}
               alt={profile.name}
               className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover border-4 border-accent/40 shadow-xl shadow-accent/20 mx-auto"
             />

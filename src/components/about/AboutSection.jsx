@@ -59,7 +59,7 @@ export default function AboutSection() {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <img
-                  src={profile.avatar}
+                  src={profile.Profile}
                   alt={profile.name}
                   className="w-14 h-14 rounded-2xl object-cover border-2 border-accent/40 shadow-md"
                 />
