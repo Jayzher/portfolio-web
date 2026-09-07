@@ -1,0 +1,213 @@
+[
+  {
+    "id": "proj-asset-mgmt",
+    "title": "Asset Management System",
+    "description": "An enterprise Asset Management platform designed and developed to track, manage, and audit organizational physical and digital assets throughout their full lifecycle. Features asset categorization, barcode/tag tracking, maintenance scheduling, depreciation calculation, transfer logs, user assignment, and real-time inventory reporting dashboards.",
+    "shortDescription": "Full lifecycle asset tracking, maintenance logs & inventory audit dashboards",
+    "thumbnail": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop",
+    "video": {
+      "url": "/videos/asset-management.webm",
+      "type": "video",
+      "duration": "Walkthrough"
+    },
+    "techStack": [
+      "Python",
+      "Django",
+      "React.js",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "REST APIs"
+    ],
+    "category": "web",
+    "links": {
+      "github": "",
+      "live": ""
+    },
+    "featured": true,
+    "order": 1,
+    "createdAt": "2026-08-25T00:00:00Z"
+  },
+  {
+    "id": "proj-ticket-support-tasks",
+    "title": "Ticket Support System with Tasks Management",
+    "description": "A unified Helpdesk Ticket Support and Project Task Management System. Enables multi-tier support ticketing with automated assignment, priority escalation, internal agent collaboration, Kanban task boards, milestone tracking, SLA monitoring, and comprehensive client resolution analytics.",
+    "shortDescription": "Unified client ticketing, Kanban task boards, SLA tracking & resolution workflows",
+    "thumbnail": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=600&h=400&fit=crop",
+    "video": {
+      "url": "/videos/ticket-support-tasks.webm",
+      "type": "video",
+      "duration": "Walkthrough"
+    },
+    "techStack": [
+      "Django",
+      "Python",
+      "React.js",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Kanban",
+      "REST APIs"
+    ],
+    "category": "web",
+    "links": {
+      "github": "",
+      "live": ""
+    },
+    "featured": true,
+    "order": 2,
+    "createdAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "proj-school-rms",
+    "title": "School Record Management System (RMS)",
+    "description": "A high-integrity School Record Management System engineered for educational institutions to digitize and manage institutional student records, enrollment workflows, grading sheets, academic transcript archives, and faculty access controls. Delivered as a team-collaborated project with 3 developers, each owning designated modules of the system.",
+    "shortDescription": "Comprehensive student records, enrollment workflows & institutional grading — built with a 3-developer team",
+    "thumbnail": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop",
+    "video": {
+      "url": "/videos/school-rms.webm",
+      "type": "video",
+      "duration": "Walkthrough"
+    },
+    "techStack": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "JavaScript",
+      "HTML5/CSS3",
+      "Tailwind CSS"
+    ],
+    "category": "web",
+    "links": {
+      "github": "",
+      "live": ""
+    },
+    "featured": true,
+    "order": 3,
+    "createdAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "proj-school-cms",
+    "title": "School Website with Content Management System (CMS)",
+    "description": "Custom School Portal and Content Management System deployed across educational institutions. Streamlines academic announcements, admissions inquiries, department portals, event publishing, and administrative content authoring with role-based permissions.",
+    "shortDescription": "Institutional school website with dynamic CMS, portal access & announcements",
+    "thumbnail": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=400&fit=crop",
+    "video": {
+      "url": "/videos/school-cms.webm",
+      "type": "video",
+      "duration": "Walkthrough"
+    },
+    "techStack": [
+      "Django",
+      "Python",
+      "MySQL",
+      "JavaScript",
+      "Tailwind CSS",
+      "Bootstrap"
+    ],
+    "category": "web",
+    "links": {
+      "github": "",
+      "live": ""
+    },
+    "featured": true,
+    "order": 4,
+    "createdAt": "2026-08-10T00:00:00Z"
+  },
+  {
+    "id": "proj-sams",
+    "title": "School Attendance Monitoring System (SAMS)",
+    "description": "A school attendance monitoring platform designed and developed to automate student and faculty attendance tracking. Features real-time reporting, administrative analytical dashboards, automated parent notification logs, and planned RFID hardware integration.",
+    "shortDescription": "School attendance tracking with admin dashboards & planned RFID integration",
+    "thumbnail": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop",
+    "video": null,
+    "techStack": [
+      "Python",
+      "Django",
+      "React.js",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "REST APIs"
+    ],
+    "category": "web",
+    "links": {
+      "github": "",
+      "live": ""
+    },
+    "featured": false,
+    "order": 5,
+    "createdAt": "2026-08-01T00:00:00Z"
+  },
+  {
+    "id": "proj-bmis",
+    "title": "Business Management & Inventory System (BMIS)",
+    "description": "Full-cycle business management and inventory tracking platform engineered to support real-time stock monitoring, purchase orders, sales tracking, and operational management. Developed and deployed across both mobile-web and desktop portals.",
+    "shortDescription": "End-to-end business management & real-time inventory auditing",
+    "thumbnail": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=400&fit=crop",
+    "video": null,
+    "techStack": [
+      "Django",
+      "Python",
+      "JavaScript",
+      "MySQL",
+      "Tailwind CSS",
+      "REST APIs"
+    ],
+    "category": "web",
+    "links": {
+      "github": "",
+      "live": ""
+    },
+    "featured": false,
+    "order": 6,
+    "createdAt": "2026-07-15T00:00:00Z"
+  },
+  {
+    "id": "proj-sve",
+    "title": "System Validation Evaluation (SVE) Platform",
+    "description": "Designed and developed at Classify Inc. to standardize project quality control, evaluation workflows, and turnover training. Features automated evaluation scoring, audit trails, certificate generation upon completion, and comprehensive admin oversight.",
+    "shortDescription": "Quality control, turnover training & automated certificate generation",
+    "thumbnail": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
+    "video": {
+      "url": "/videos/sve-platform.webm",
+      "type": "video",
+      "duration": "Walkthrough"
+    },
+    "techStack": [
+      "Django",
+      "Django REST Framework",
+      "React.js",
+      "PostgreSQL",
+      "Tailwind CSS"
+    ],
+    "category": "web",
+    "links": {
+      "github": "",
+      "live": ""
+    },
+    "featured": false,
+    "order": 7,
+    "createdAt": "2026-06-20T00:00:00Z"
+  },
+  {
+    "id": "proj-da-service",
+    "title": "Department of Agriculture Request & Travel Order System",
+    "description": "Developed during ICT Internship at Department of Agriculture. Digital internal service request portal and travel order management platform with automated approvals, multi-tier routing, and PDF travel order generation.",
+    "shortDescription": "Digitized service request tracking & automated travel order approvals",
+    "thumbnail": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&h=400&fit=crop",
+    "video": null,
+    "techStack": [
+      "PHP",
+      "JavaScript",
+      "MySQL",
+      "Bootstrap",
+      "REST APIs"
+    ],
+    "category": "api",
+    "links": {
+      "github": "",
+      "live": ""
+    },
+    "featured": false,
+    "order": 8,
+    "createdAt": "2026-03-18T00:00:00Z"
+  }
+]
