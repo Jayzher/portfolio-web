@@ -4,7 +4,7 @@ export const portfolioData = {
     preferredName: "Jayzher",
     role: "Full-Stack Software Engineer",
     specialization: "Specializing in Business Systems, Workflow Automation & Data-Driven Applications",
-    subRole: "Python • Django • React • TypeScript • PostgreSQL • REST APIs • Docker",
+    subRole: "Python • Django • Fastify • React • TypeScript • PostgreSQL • Docker",
     availability: "Available for Remote Worldwide Engineering Roles",
     status: "active",
     location: "Surallah, South Cotabato, Philippines",
@@ -17,7 +17,7 @@ export const portfolioData = {
     tagline: "Full-Stack Software Engineer specializing in Business Systems, Workflow Automation & Data-Driven Applications.",
     bio: [
       "I am a Full-Stack Software Engineer with 2+ years of experience designing, architecting, and deploying high-impact enterprise applications, educational management systems, and automated workflow solutions.",
-      "Specialized in Python (Django/DRF), React.js, TypeScript, PostgreSQL, Single-Codebase Multi-Tenancy Architecture, and RESTful microservices. Proven track record of building production systems including Asset Management Platforms, Multi-Tenant Ticket Support & Task Workflows, School Record Management Systems (RMS), and System Validation & Evaluation (SVE) suites."
+      "Specialized in Python (Django/DRF), Fastify, Celery, React.js, Redux, TypeScript, PostgreSQL, Single-Codebase Multi-Tenancy Architecture, and RESTful microservices. Proven track record of building production systems including Asset Management Platforms, Business Management & Inventory Systems (BMIS), Multi-Tenant Ticket Support & Task Workflows, School Record Management Systems (RMS), and System Validation & Evaluation (SVE) suites."
     ],
   },
 
@@ -47,37 +47,37 @@ export const portfolioData = {
     {
       id: "fullstack",
       title: "Enterprise & Business Systems",
-      description: "Designing end-to-end software architecture for asset management, single-codebase multi-tenant portals, helpdesk ticket management, and academic systems.",
+      description: "Designing end-to-end software architecture for asset management, business inventory platforms, single-codebase multi-tenant portals, and helpdesk systems.",
       icon: "CodeXml",
       highlights: [
         "Single Codebase Multi-Tenancy System Architecture",
+        "Business Management & Inventory Systems (BMIS - Fastify & Celery)",
         "Asset Management Systems (Full Lifecycle Audit Trails)",
         "Multi-Tenant Ticket Support with Kanban & SLA Workflows",
         "School Record Management Systems (RMS & LMS Integration)",
         "System Validation & Evaluation (SVE) Automated QC",
-        "Business & Inventory Management Platforms (BMIS)",
       ],
     },
     {
       id: "backend",
       title: "Backend & RESTful API Engineering",
-      description: "Robust, scalable, and secure backend microservices built with Python, Django, Django REST Framework, and PostgreSQL.",
+      description: "Robust, scalable, and secure backend microservices built with Python, Django, DRF, Fastify, Celery, and PostgreSQL.",
       icon: "Zap",
       highlights: [
-        "Django & Django REST Framework (DRF) Architecture",
+        "Django & Fastify REST API Microservice Architecture",
+        "Asynchronous Task Queues with Celery & Redis",
         "Single Codebase Multi-Tenancy Schema & Tenant Routing",
         "PostgreSQL & MySQL Relational Database Optimization",
         "Role-Based Access Control (RBAC) & Authentication",
-        "Automated Certificate, Invoice & Report Generation",
       ],
     },
     {
       id: "frontend",
       title: "Modern Frontend & UI Architecture",
-      description: "Clean, responsive, and type-safe user interfaces crafted with React.js, TypeScript, Tailwind CSS, and Framer Motion.",
+      description: "Clean, responsive, and type-safe user interfaces crafted with React.js, Redux Toolkit, TypeScript, Tailwind CSS, and Framer Motion.",
       icon: "Smartphone",
       highlights: [
-        "React.js & TypeScript Single Page Applications",
+        "React.js, Redux & TypeScript Single Page Applications",
         "Multi-Tenant Workspace & Client Organization UI",
         "Interactive Dashboards & Analytics Visualization",
         "Mobile-First Responsive Web Design",
@@ -101,20 +101,22 @@ export const portfolioData = {
   skillsCategorized: [
     {
       category: "Backend",
-      description: "Robust server-side logic, API design & object-oriented architecture",
+      description: "Robust server-side logic, high-performance APIs & task queue engines",
       items: [
         { name: "Python", tag: "Primary Language" },
-        { name: "Django", tag: "Web Framework" },
-        { name: "Django REST Framework (DRF)", tag: "API Engine" },
+        { name: "Django & DRF", tag: "Web & API Engine" },
+        { name: "Fastify", tag: "High-Speed Node API" },
+        { name: "Celery & Redis", tag: "Task Queue Engine" },
         { name: "PHP", tag: "Server-side Scripting" },
         { name: "Java", tag: "Object-Oriented Core" },
       ]
     },
     {
       category: "Frontend",
-      description: "Modern component architectures & responsive user interfaces",
+      description: "Modern component architectures & state management systems",
       items: [
         { name: "React.js", tag: "UI Library" },
+        { name: "Redux / Redux Toolkit", tag: "State Management" },
         { name: "JavaScript (ES6+)", tag: "Core Language" },
         { name: "TypeScript", tag: "Type Safety" },
         { name: "Tailwind CSS", tag: "Styling Framework" },
@@ -155,6 +157,7 @@ export const portfolioData = {
       type: "Professional Experience",
       description: "Engineered, deployed, and maintained mission-critical enterprise web applications and educational management platforms serving 3,000+ active students, faculty, and administrative users across multiple client tenants.",
       achievements: [
+        "Architected and deployed a Business Management & Inventory System (BMIS) on a Single Codebase Multi-Tenancy Architecture using React.js, Redux, Fastify, Celery, PostgreSQL, and Docker, achieving sub-50ms API response latency and cutting inventory audit discrepancies by 80%.",
         "Architected and deployed an Asset Management System featuring full-lifecycle equipment auditing, barcode categorization, stock movement tracking, and preventive maintenance logs.",
         "Engineered a unified Ticket Support System with Tasks Management built on a Single Codebase Multi-Tenancy Architecture, serving multiple client organizations from one codebase with isolated workspace data.",
         "Collaborated in a 3-developer team to design and build a multi-tenant School Record Management System (RMS), implementing two-way data synchronization with external LMS microservices from a single codebase deployment.",
@@ -162,7 +165,7 @@ export const portfolioData = {
         "Developed and maintained Content Management Systems (CMS) for 3+ educational institutions, ensuring 99.9% uptime, security patch releases, and continuous feature upgrades.",
         "Delivered level-2/3 technical support and post-deployment system operations, reducing client ticket resolution turnaround by 45%."
       ],
-      skills: ["Python", "Django", "Django REST Framework", "Multi-Tenancy", "Single Codebase Architecture", "React.js", "PostgreSQL", "Tailwind CSS", "REST APIs", "Docker"],
+      skills: ["React.js", "Redux", "Fastify", "Celery", "Python", "Django", "PostgreSQL", "Multi-Tenancy", "Single Codebase Architecture", "Docker", "Tailwind CSS"],
     },
     {
       period: "November 2023 — March 2024",

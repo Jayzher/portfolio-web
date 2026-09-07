@@ -191,6 +191,66 @@
     }
   },
   {
+    "id": "proj-bmis",
+    "title": "Business Management & Inventory System (BMIS)",
+    "description": "A high-performance Business Management and Inventory System (BMIS) engineered on a Single Codebase Multi-Tenancy Architecture using React.js, Redux, Fastify REST microservices, Celery background queues, PostgreSQL, Tailwind CSS, and Docker. Built for real-time multi-warehouse inventory auditing, asynchronous purchase order processing, low-stock auto-triggers, and predictive business analytics.",
+    "shortDescription": "Single codebase multi-tenant inventory & business platform built with React, Redux, Fastify, Celery, PostgreSQL & Docker",
+    "thumbnail": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=400&fit=crop",
+    "video": null,
+    "techStack": [
+      "React.js",
+      "Redux",
+      "Fastify",
+      "Celery",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Docker",
+      "Multi-Tenancy",
+      "Single Codebase Architecture",
+      "REST APIs"
+    ],
+    "category": "web",
+    "links": {
+      "github": "",
+      "live": "",
+      "isPrivateRepo": true,
+      "privateRepoNote": "Private Commercial Repository — Architecture & Demo available upon request"
+    },
+    "featured": true,
+    "order": 4,
+    "createdAt": "2026-07-15T00:00:00Z",
+    "caseStudy": {
+      "problem": "High-volume retail and enterprise inventory operations suffered from spreadsheet stock reconciliation errors, delayed purchase order approvals, uncoordinated multi-warehouse dispatch, and server latency when compiling large inventory reports.",
+      "role": "Full-Stack Software Engineer — Designed the single codebase multi-tenancy architecture, Fastify REST microservice endpoints, Redux state management engine, Celery asynchronous background queues, and PostgreSQL data schemas.",
+      "architectureFlow": [
+        { "step": "React & Redux Toolkit UI", "desc": "Predictable State & Dynamic Inventory UI" },
+        { "step": "Fastify API Engine", "desc": "High-Throughput REST Microservices (<50ms)" },
+        { "step": "Celery & Redis Worker", "desc": "Asynchronous Batch Auditing & Queue" },
+        { "step": "PostgreSQL Multi-Tenant DB", "desc": "Tenant Data Isolation & Stock Schemas" },
+        { "step": "Docker Cluster", "desc": "Containerized Deployment & Monitoring" }
+      ],
+      "architectureDetails": {
+        "databaseSchema": "Single codebase multi-tenant relational model normalizing SKU Items, Multi-Warehouse Locations, Requisitions, Purchase Orders, Sales Invoices, and Stock Movement Audit Trails.",
+        "apiStructure": "High-throughput Fastify REST APIs with Fastify JSON Schema validation, JWT token authorization, and Redis caching achieving under 50ms response latency.",
+        "backgroundProcessing": "Celery worker cluster backed by Redis for asynchronous batch stock re-indexing, automated low-stock notifications, and heavy report compilation.",
+        "securityAndRBAC": "Granular multi-tenant RBAC separating Warehouse Managers, Procurement Officers, Sales Clerks, and Corporate Executives."
+      },
+      "keyFeatures": [
+        "Single Codebase Multi-Tenancy Architecture (Multi-Warehouse & Organization Tenant Isolation)",
+        "High-Performance Fastify REST API Microservices (<50ms API Latency)",
+        "Asynchronous Celery & Redis Task Worker for Heavy Inventory Auditing",
+        "Redux Toolkit Predictable Front-End State & Inventory Management",
+        "Purchase Order Requisition & Supplier Invoice Workflows",
+        "Real-Time Stock Valuations & Low-Stock Auto-Replenishment Triggers"
+      ],
+      "challengesAndSolutions": {
+        "challenge": "Generating heavy daily inventory audit reports and multi-warehouse reconciliation across tens of thousands of SKU items without blocking HTTP API response latency.",
+        "solution": "Engineered asynchronous Celery background workers backed by Redis to compile inventory reports out-of-band, streaming completed download URLs back via polling/WebSockets without slowing down Fastify REST APIs."
+      },
+      "impact": "Enabled real-time multi-tenant inventory tracking across multiple warehouses with sub-50ms API responses, reducing stock count errors by 80% and speeding up purchase order processing by 5x."
+    }
+  },
+  {
     "id": "proj-sve",
     "title": "System Validation Evaluation (SVE) Platform",
     "description": "An enterprise quality control and evaluation platform engineered at Classify Inc. to standardize software project turnover, evaluation scoring, user acceptance testing (UAT), and automated PDF certificate generation.",
@@ -218,7 +278,7 @@
       "privateRepoNote": "Private Commercial Repository — Architecture & Demo available upon request"
     },
     "featured": true,
-    "order": 4,
+    "order": 5,
     "createdAt": "2026-06-20T00:00:00Z",
     "caseStudy": {
       "problem": "Software turnover evaluations and client sign-offs were recorded manually on paper forms, resulting in untracked QA feedback, delayed client handoffs, and manual certificate creation.",
@@ -274,7 +334,7 @@
       "live": "https://hccci.edu.ph"
     },
     "featured": false,
-    "order": 5,
+    "order": 6,
     "createdAt": "2026-08-10T00:00:00Z"
   },
   {
@@ -299,7 +359,7 @@
       "privateRepoNote": "Government Agency System — Architecture & Documentation available upon request"
     },
     "featured": false,
-    "order": 6,
+    "order": 7,
     "createdAt": "2026-03-18T00:00:00Z"
   }
 ]
