@@ -6,7 +6,7 @@
     "shortDescription": "Full lifecycle asset tracking, maintenance logs & inventory audit dashboards",
     "thumbnail": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop",
     "video": {
-      "url": "/videos/asset-management.webm",
+      "url": "https://res.cloudinary.com/dgzhcuwym/video/upload/v1788527800/walkthrough/zcejmbzg34tptxs9dtb2.webm",
       "type": "video",
       "duration": "Walkthrough"
     },
@@ -34,7 +34,7 @@
     "shortDescription": "Unified client ticketing, Kanban task boards, SLA tracking & resolution workflows",
     "thumbnail": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=600&h=400&fit=crop",
     "video": {
-      "url": "/videos/ticket-support-tasks.webm",
+      "url": "https://res.cloudinary.com/dgzhcuwym/video/upload/v1788527768/walkthrough/uinoor0yvugftr9yyd0p.webm",
       "type": "video",
       "duration": "Walkthrough"
     },
@@ -63,7 +63,7 @@
     "shortDescription": "Comprehensive student records, enrollment workflows & institutional grading — built with a 3-developer team",
     "thumbnail": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop",
     "video": {
-      "url": "/videos/school-rms.webm",
+      "url": "https://res.cloudinary.com/dgzhcuwym/video/upload/v1788527836/walkthrough/il0a5asu6o30gcd6pxor.webm",
       "type": "video",
       "duration": "Walkthrough"
     },
@@ -91,7 +91,7 @@
     "shortDescription": "Institutional school website with dynamic CMS, portal access & announcements",
     "thumbnail": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=400&fit=crop",
     "video": {
-      "url": "/videos/school-cms.webm",
+      "url": "https://res.cloudinary.com/dgzhcuwym/video/upload/v1788795114/xgc0trdr2ihzjdiriqjc.mp4",
       "type": "video",
       "duration": "Walkthrough"
     },
@@ -106,7 +106,7 @@
     "category": "web",
     "links": {
       "github": "",
-      "live": ""
+      "live": "https://hccci.edu.ph"
     },
     "featured": true,
     "order": 4,
@@ -115,7 +115,7 @@
   {
     "id": "proj-sams",
     "title": "School Attendance Monitoring System (SAMS)",
-    "description": "A school attendance monitoring platform designed and developed to automate student and faculty attendance tracking. Features real-time reporting, administrative analytical dashboards, automated parent notification logs, and planned RFID hardware integration.",
+    "description": "A school attendance monitoring platform designed and developed to automate student and faculty attendance tracking. Features real-time reporting, administrative analytical dashboards, automated parent notification logs, and RFID hardware integration.",
     "shortDescription": "School attendance tracking with admin dashboards & planned RFID integration",
     "thumbnail": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop",
     "video": null,
@@ -139,7 +139,7 @@
   {
     "id": "proj-bmis",
     "title": "Business Management & Inventory System (BMIS)",
-    "description": "Full-cycle business management and inventory tracking platform engineered to support real-time stock monitoring, purchase orders, sales tracking, and operational management. Developed and deployed across both mobile-web and desktop portals.",
+    "description": "Full-cycle business management and inventory tracking platform engineered to support real-time stock monitoring, purchase orders, sales tracking, and operational management.",
     "shortDescription": "End-to-end business management & real-time inventory auditing",
     "thumbnail": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=400&fit=crop",
     "video": null,
@@ -167,7 +167,7 @@
     "shortDescription": "Quality control, turnover training & automated certificate generation",
     "thumbnail": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
     "video": {
-      "url": "/videos/sve-platform.webm",
+      "url": "https://res.cloudinary.com/dgzhcuwym/video/upload/v1788527804/walkthrough/alknagdcamczgwbvueh2.webm",
       "type": "video",
       "duration": "Walkthrough"
     },
@@ -183,7 +183,7 @@
       "github": "",
       "live": ""
     },
-    "featured": false,
+    "featured": true,
     "order": 7,
     "createdAt": "2026-06-20T00:00:00Z"
   },
