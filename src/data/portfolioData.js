@@ -12,7 +12,7 @@ export const portfolioData = {
     email: "jayzherjuaniza@gmail.com",
     github: "https://github.com/Jayzher",
     linkedin: "https://linkedin.com",
-    resumeUrl: "/Jayzher_Juaniza_Resume.png",
+    resumeUrl: "https://res.cloudinary.com/dgzhcuwym/image/upload/v1788870579/pgotzyrfti1lfehryyaa.png",
     avatar: "https://res.cloudinary.com/dgzhcuwym/image/upload/v1788801420/rhm2ccgcxlm7vepxx5r7.jpg",
     tagline: "Full-Stack Software Engineer specializing in Business Systems, Workflow Automation & Data-Driven Applications.",
     bio: [
