@@ -202,7 +202,7 @@ export const portfolioData = {
     {
       name: "Burliegn Earl Ponce",
       role: "Co-Developer, School RMS",
-      company: "Former College Classmate",
+      company: "Classify Inc.",
       text: "We go back to college as classmates, and working together again on the School RMS confirmed what I already knew — Jayzher picks up new stacks and unfamiliar project requirements incredibly fast. His speed of learning and adaptation kept our module handoffs smooth even under tight timelines.",
       rating: 5,
     },
