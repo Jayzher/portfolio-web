@@ -26,9 +26,9 @@ export const portfolioData = {
     badge: "Open to Remote Opportunities",
     title: "Available for International Remote Roles",
     statement: "I am currently seeking remote Full-Stack Developer / Software Engineer opportunities with international engineering teams.",
-    location: "🌎 Remote Worldwide",
-    timezone: "🕐 UTC+8 / Flexible Overlap",
-    employmentType: "💼 Full-Time / Contract",
+    location: "Remote Worldwide",
+    timezone: "UTC+8 / Flexible Overlap",
+    employmentType: "Full-Time / Contract",
     highlights: [
       { label: "Remote Worldwide", value: "100% Remote Ready" },
       { label: "Timezone Flexibility", value: "UTC+8 with US / EU Overlap" },
