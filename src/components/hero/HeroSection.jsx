@@ -158,7 +158,9 @@ export default function HeroSection() {
           </div>
 
           <a
-            href={`mailto:${profile.email}`}
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex-shrink-0 px-4 py-2.5 rounded-xl bg-accent text-white font-semibold text-xs hover:bg-accent-hover transition-colors shadow-md"
           >
             Hire Remotely
