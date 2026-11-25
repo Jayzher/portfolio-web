@@ -10,8 +10,8 @@ export const portfolioData = {
     location: "Surallah, South Cotabato, Philippines",
     phone: "+63 951 880 4288",
     email: "jayzherjuaniza@gmail.com",
-    github: "https://github.com/Jayzher",
     linkedin: "https://linkedin.com",
+    github: "https://github.com/Jayzher",
     resumeUrl: "https://res.cloudinary.com/dgzhcuwym/image/upload/v1788870579/pgotzyrfti1lfehryyaa.png",
     avatar: "https://res.cloudinary.com/dgzhcuwym/image/upload/v1788801420/rhm2ccgcxlm7vepxx5r7.jpg",
     tagline: "Full-Stack Software Engineer specializing in Business Systems, Workflow Automation & Data-Driven Applications.",
@@ -150,7 +150,7 @@ export const portfolioData = {
 
   experience: [
     {
-      period: "August 2024 — Present",
+      period: "July 2024 — Present",
       role: "Full-Stack Software Engineer",
       company: "Classify Inc.",
       location: "Surallah, South Cotabato",
