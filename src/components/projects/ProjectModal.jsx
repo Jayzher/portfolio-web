@@ -158,6 +158,11 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                         <Sparkles className="w-3 h-3" /> Detailed Case Study
                       </span>
                     )}
+                    {project.status && (
+                      <span className="text-[11px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-md bg-amber-500/15 text-amber-400 border border-amber-500/30">
+                        {project.status}
+                      </span>
+                    )}
                     <span className={`flex items-center gap-1 text-xs font-medium ${
                       isDarkMode ? 'text-text-secondary' : 'text-text-secondary-light'
                     }`}>

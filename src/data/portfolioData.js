@@ -13,7 +13,7 @@ export const portfolioData = {
     linkedin: "https://linkedin.com",
     github: "https://github.com/Jayzher",
     githubAlt: "https://github.com/Jayz-EE",
-    resumeUrl: "/Jayzher_Juaniza_CV.pdf",
+    resumeUrl: `${import.meta.env.BASE_URL}Jayzher_Juaniza_Resume.pdf`,
     avatar: "https://res.cloudinary.com/dgzhcuwym/image/upload/v1788801420/rhm2ccgcxlm7vepxx5r7.jpg",
     tagline: "Full-Stack Software Engineer specializing in Business Systems, Workflow Automation & Agentic AI Systems.",
     bio: [
@@ -182,7 +182,7 @@ export const portfolioData = {
     },
     {
       period: "July 2024 — Present",
-      role: "Full-Stack Software Engineer",
+      role: "Web Developer",
       company: "Classify Inc.",
       location: "Surallah, South Cotabato, Philippines",
       type: "Professional Experience",
@@ -199,7 +199,7 @@ export const portfolioData = {
     },
     {
       period: "November 2023 — March 2024",
-      role: "ICT Software Engineer Intern (OJT)",
+      role: "ICT Intern (OJT)",
       company: "Department of Agriculture",
       location: "Regional Field Office XII, South Cotabato",
       type: "Internship Experience",
@@ -217,7 +217,7 @@ export const portfolioData = {
     {
       degree: "Bachelor of Science in Information Technology (BSIT)",
       institution: "Holy Child Central Colleges Inc.",
-      period: "2021 — 2024",
+      period: "2020 — 2024",
       description: "Comprehensive foundation in software engineering, object-oriented design, relational database systems, and application architecture.",
     },
     {

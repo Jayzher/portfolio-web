@@ -69,10 +69,15 @@ export default function ProjectCard({ project, index, onPlay }) {
                   <FileText className="w-4 h-4" />
                   <span>Read Case Study & Architecture</span>
                 </>
-              ) : (
+              ) : hasVideo ? (
                 <>
                   <Play className="w-4 h-4 ml-0.5" fill="white" />
                   <span>Watch Walkthrough</span>
+                </>
+              ) : (
+                <>
+                  <FileText className="w-4 h-4" />
+                  <span>View Project Details</span>
                 </>
               )}
             </motion.div>
@@ -84,6 +89,11 @@ export default function ProjectCard({ project, index, onPlay }) {
               {project.featured && (
                 <span className="px-2.5 py-1 rounded-lg bg-accent text-white text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
                   Featured Case Study
+                </span>
+              )}
+              {project.status && (
+                <span className="px-2.5 py-1 rounded-lg bg-amber-500 text-black text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+                  {project.status}
                 </span>
               )}
             </div>
@@ -119,7 +129,7 @@ export default function ProjectCard({ project, index, onPlay }) {
             ) : (
               <>
                 <Clock className="w-3 h-3 text-accent" />
-                {hasVideo ? project.video.duration : 'Walkthrough'}
+                {hasVideo ? project.video.duration : 'Details'}
               </>
             )}
           </div>
@@ -177,9 +187,13 @@ export default function ProjectCard({ project, index, onPlay }) {
             <>
               <FileText className="w-3.5 h-3.5" /> Read Case Study
             </>
-          ) : (
+          ) : hasVideo ? (
             <>
               <Play className="w-3.5 h-3.5" /> Watch Walkthrough
+            </>
+          ) : (
+            <>
+              <FileText className="w-3.5 h-3.5" /> View Details
             </>
           )}
         </span>

@@ -34,7 +34,7 @@
     "createdAt": "2026-08-25T00:00:00Z",
     "caseStudy": {
       "problem": "Organizational departments and client entities suffered from untracked equipment loss, manual spreadsheet discrepancies, delayed maintenance schedules, and maintaining separate codebase deployments across multiple physical locations.",
-      "role": "Full-Stack Software Engineer — Owned end-to-end single codebase multi-tenancy architecture, database modeling, RESTful API design, React interface implementation, and post-deployment client support.",
+      "role": "Web Developer — Owned end-to-end single codebase multi-tenancy architecture, database modeling, RESTful API design, React interface implementation, and post-deployment client support.",
       "architectureFlow": [
         { "step": "React / TypeScript Frontend", "desc": "Component UI & Async State Management" },
         { "step": "Multi-Tenant Router", "desc": "Single Codebase Tenant Context Dispatcher" },
@@ -98,7 +98,7 @@
     "createdAt": "2026-08-20T00:00:00Z",
     "caseStudy": {
       "problem": "Support teams struggled with fragmented client communication, maintaining separate client deployments, missed SLA deadlines for urgent tickets, lack of task visibility, and complex multi-organization management.",
-      "role": "Full-Stack Software Engineer — Designed the single codebase multi-tenancy architecture, tenant data isolation filters, ticketing-to-task pipeline, drag-and-drop Kanban state engine, and SLA escalation logic.",
+      "role": "Web Developer — Designed the single codebase multi-tenancy architecture, tenant data isolation filters, ticketing-to-task pipeline, drag-and-drop Kanban state engine, and SLA escalation logic.",
       "architectureFlow": [
         { "step": "React & Framer Motion", "desc": "Multi-Tenant Workspace & Kanban UI" },
         { "step": "Tenant Dispatcher", "desc": "Domain / Subdomain Tenant Routing" },
@@ -161,7 +161,7 @@
     "createdAt": "2026-08-15T00:00:00Z",
     "caseStudy": {
       "problem": "Educational institutions faced fragmented student academic records, separate server deployments per campus, manual transcript computation errors, slow enrollment processing, and disconnected LMS data handoffs.",
-      "role": "Full-Stack Software Engineer (3-Developer Team) — Architected the single codebase multi-tenant campus isolation model, core enrollment workflows, subject loading logic, grading computations, and LMS micro-sync.",
+      "role": "Web Developer (3-Developer Team) — Architected the single codebase multi-tenant campus isolation model, core enrollment workflows, subject loading logic, grading computations, and LMS micro-sync.",
       "architectureFlow": [
         { "step": "Institutional Frontend UI", "desc": "Registrar & Faculty Management Portals" },
         { "step": "Multi-Tenant Context Engine", "desc": "Single Codebase Campus Data Isolation" },
@@ -221,7 +221,7 @@
     "createdAt": "2026-07-15T00:00:00Z",
     "caseStudy": {
       "problem": "High-volume retail and enterprise inventory operations suffered from spreadsheet stock reconciliation errors, delayed purchase order approvals, uncoordinated multi-warehouse dispatch, and server latency when compiling large inventory reports.",
-      "role": "Full-Stack Software Engineer — Designed the single codebase multi-tenancy architecture, Fastify REST microservice endpoints, Redux state management engine, Celery asynchronous background queues, and PostgreSQL data schemas.",
+      "role": "Web Developer — Designed the single codebase multi-tenancy architecture, Fastify REST microservice endpoints, Redux state management engine, Celery asynchronous background queues, and PostgreSQL data schemas.",
       "architectureFlow": [
         { "step": "React & Redux Toolkit UI", "desc": "Predictable State & Dynamic Inventory UI" },
         { "step": "Fastify API Engine", "desc": "High-Throughput REST Microservices" },
@@ -282,7 +282,7 @@
     "createdAt": "2026-06-20T00:00:00Z",
     "caseStudy": {
       "problem": "Software turnover evaluations and client sign-offs were recorded manually on paper forms, resulting in untracked QA feedback, delayed client handoffs, and manual certificate creation.",
-      "role": "Full-Stack Software Engineer — Designed the complete evaluation workflow, dynamic scoring matrix, automated PDF generator, and evaluation audit dashboard.",
+      "role": "Web Developer — Designed the complete evaluation workflow, dynamic scoring matrix, automated PDF generator, and evaluation audit dashboard.",
       "architectureFlow": [
         { "step": "React Evaluation Portal", "desc": "Dynamic Survey & Criteria UI" },
         { "step": "REST APIs (DRF)", "desc": "Weighted Scoring & Criteria Validation" },
@@ -340,7 +340,7 @@
   {
     "id": "proj-da-service",
     "title": "Request & Travel Order System",
-    "description": "Engineered during ICT Software Engineer Internship (OJT) at the Department of Agriculture. Digital internal service request portal and travel order management platform with multi-tier routing, approval workflows, staff travel tracking, and dynamic PDF travel voucher generation.",
+    "description": "Built during my ICT Internship (OJT) at the Department of Agriculture. Digital internal service request portal and travel order management platform with multi-tier routing, approval workflows, staff travel tracking, and dynamic PDF travel voucher generation.",
     "shortDescription": "Digitized service request tracking & automated travel order approval workflows — Built during ICT Internship (OJT) at Department of Agriculture",
     "thumbnail": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop",
     "video": null,
@@ -364,7 +364,7 @@
     "createdAt": "2026-03-18T00:00:00Z",
     "caseStudy": {
       "problem": "Government regional office operations suffered from slow paper-based service request routing, lost travel order documents, and manual travel voucher approvals across multiple agency divisions.",
-      "role": "ICT Software Engineer Intern (OJT at Department of Agriculture) — Designed the digital service request workflow, travel order approval engine, relational MySQL schema, and automated PDF travel voucher generator.",
+      "role": "ICT Intern (OJT at Department of Agriculture) — Designed the digital service request workflow, travel order approval engine, relational MySQL schema, and automated PDF travel voucher generator.",
       "architectureFlow": [
         { "step": "PHP / Bootstrap Web UI", "desc": "Service & Travel Request Forms" },
         { "step": "REST API Controller", "desc": "Request Routing & Multi-Tier Approval Logic" },
@@ -382,7 +382,7 @@
         "Automated Staff Travel Order Application & Multi-Tier Approval Engine",
         "Dynamic High-Resolution PDF Travel Order & Voucher Generation",
         "Division Approval Status Dashboard & Audit Logs",
-        "Engineered during ICT Software Engineer Internship (OJT) at Department of Agriculture"
+        "Built during ICT Internship (OJT) at Department of Agriculture"
       ],
       "challengesAndSolutions": {
         "challenge": "Digitizing legacy government paper forms into a strict multi-tier approval hierarchy while ensuring non-technical staff could submit and track requests seamlessly.",
@@ -480,6 +480,70 @@
         "solution": "Routed each role to the cheapest model that can do it well (Opus, Sonnet or Haiku sub-agents) to cut AI costs, and wrote Python tools for schema validation, automated checks and changes applied across the whole fleet."
       },
       "impact": "Produced 29 websites (25 live, 4 deploying): 27 corporate sites and 2 school sites, each its own project and each passing the same security, SEO, performance, accessibility and compliance audits."
+    }
+  },
+  {
+    "id": "proj-sams",
+    "title": "School Attendance Monitoring System (SAMS)",
+    "status": "On Hiatus",
+    "description": "A school administration platform I designed and built, centered on attendance taken by RFID, QR code or manual entry. It also covers class scheduling with room and teacher conflict checks, enrollments, grading, class ranking, guardian links, real-time messaging and reports, with separate dashboards for superusers, admins, teachers, students and guardians. The backend is Django REST Framework with Celery, Redis and Django Channels on PostgreSQL; the frontend is a React and TypeScript PWA that keeps working offline and syncs when the connection returns. The MVP is complete; the project is currently on hiatus.",
+    "shortDescription": "RFID/QR attendance, scheduling, enrollment, grading and guardian messaging with dashboards for 5 roles, as an offline-first PWA. MVP complete, on hiatus.",
+    "thumbnail": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop",
+    "video": null,
+    "techStack": [
+      "Django",
+      "Django REST Framework",
+      "React 19",
+      "TypeScript",
+      "PostgreSQL",
+      "Celery & Redis",
+      "Django Channels (WebSockets)",
+      "PWA / IndexedDB",
+      "Firebase Cloud Messaging",
+      "Docker",
+      "Nginx",
+      "Tailwind CSS"
+    ],
+    "category": "web",
+    "links": {
+      "github": "",
+      "live": "",
+      "isPrivateRepo": true,
+      "privateRepoNote": "Private Repository — Architecture & Demo available upon request"
+    },
+    "featured": false,
+    "order": 8,
+    "createdAt": "2026-11-26T00:00:00Z",
+    "caseStudy": {
+      "problem": "Schools tracked attendance on paper or in spreadsheets, so teachers, advisers and guardians could not see absences quickly, and classrooms with weak internet could not rely on an online-only system.",
+      "role": "Designer & Developer — Designed and built the Django REST backend, role-based permissions, attendance and scheduling logic, real-time messaging and notifications, and the React/TypeScript offline-first PWA frontend.",
+      "architectureFlow": [
+        { "step": "React / TypeScript PWA", "desc": "Role dashboards, RFID/QR attendance, offline queue" },
+        { "step": "IndexedDB (Dexie)", "desc": "Cached reference data & queued offline changes" },
+        { "step": "Django REST API", "desc": "Cookie-based JWT auth & central role checks" },
+        { "step": "Channels + Celery / Redis", "desc": "WebSocket messaging, push & scheduled jobs" },
+        { "step": "PostgreSQL", "desc": "Students, schedules, enrollments & attendance records" }
+      ],
+      "architectureDetails": {
+        "databaseSchema": "PostgreSQL schema split into Django apps for users and profiles, students, teachers, guardians, programs, subjects, rooms, class sections, schedules, enrollments (academic years and semesters), attendance sessions and records, ranking, notifications and messaging.",
+        "apiStructure": "Django REST Framework endpoints per app, with nested routes, filtering and OpenAPI docs (drf-spectacular); Django Channels consumers handle chat and notification delivery over WebSockets.",
+        "securityAndRBAC": "JWT access and refresh tokens in httpOnly cookies with session revocation checks; role checks for superuser, admin, teacher, student and guardian centralized in one permissions module, plus rate limiting and security-header middleware.",
+        "validationAndAudit": "Schedule creation rejects room and teacher conflicts; offline attendance changes are queued with retry and failure handling and synced on reconnect; Celery workers send push notifications and run scheduled cleanup."
+      },
+      "keyFeatures": [
+        "Attendance by RFID, QR code or manual entry",
+        "Offline-first PWA: reference data cached in IndexedDB, changes queued and synced on reconnect",
+        "Class scheduling with room and teacher conflict validation",
+        "Enrollments, academic years, semesters, grading and class ranking",
+        "Dashboards for superusers, admins, teachers, students and guardians",
+        "Real-time messaging over WebSockets and push notifications through Firebase Cloud Messaging",
+        "Attendance and performance reports with PDF and Excel export"
+      ],
+      "challengesAndSolutions": {
+        "challenge": "Teachers needed to take attendance in classrooms with unreliable internet without losing records or creating duplicates.",
+        "solution": "Preloaded students, classes, schedules and terms into IndexedDB, queued attendance changes locally with retry and failure handling, and synced them automatically when the connection returned, with an offline status page reachable from any screen."
+      },
+      "impact": "Delivered a working MVP covering attendance, scheduling, enrollment, grading, messaging and reporting for five user roles, tested with Vitest, Playwright and a pytest harness. The project is currently on hiatus before pilot deployment."
     }
   }
 ]

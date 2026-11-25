@@ -64,11 +64,11 @@ export default function ResumeModal({ isOpen, onClose }) {
                 href={profile.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                download="Jayzher_Juaniza_CV.pdf"
+                download="Jayzher_Juaniza_Resume.pdf"
                 className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-accent text-white text-xs font-semibold hover:bg-accent-hover transition-colors shadow-md"
               >
                 <Download className="w-3.5 h-3.5" />
-                Download CV (PDF)
+                Download Resume (PDF)
               </a>
               <button
                 onClick={onClose}
