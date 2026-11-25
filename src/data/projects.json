@@ -486,8 +486,8 @@
     "id": "proj-sams",
     "title": "School Attendance Monitoring System (SAMS)",
     "status": "On Hiatus",
-    "description": "A school administration platform I designed and built, centered on attendance taken by RFID, QR code or manual entry. It also covers class scheduling with room and teacher conflict checks, enrollments, grading, class ranking, guardian links, real-time messaging and reports, with separate dashboards for superusers, admins, teachers, students and guardians. The backend is Django REST Framework with Celery, Redis and Django Channels on PostgreSQL; the frontend is a React and TypeScript PWA that keeps working offline and syncs when the connection returns. The MVP is complete; the project is currently on hiatus.",
-    "shortDescription": "RFID/QR attendance, scheduling, enrollment, grading and guardian messaging with dashboards for 5 roles, as an offline-first PWA. MVP complete, on hiatus.",
+    "description": "A school administration platform commissioned by a school, which I designed and built, centered on attendance taken by RFID, QR code or manual entry. It also covers class scheduling with room and teacher conflict checks, enrollments, grading, class ranking, guardian links, real-time messaging and reports, with separate dashboards for superusers, admins, teachers, students and guardians. The backend is Django REST Framework with Celery, Redis and Django Channels on PostgreSQL; the frontend is a React and TypeScript PWA that keeps working offline and syncs when the connection returns. The MVP is complete but was never deployed: the project is on hiatus because recent earthquakes damaged the commissioning school's facilities.",
+    "shortDescription": "RFID/QR attendance, scheduling, enrollment, grading and guardian messaging with dashboards for 5 roles, as an offline-first PWA. MVP complete, not deployed; on hiatus after earthquakes damaged the school's facilities.",
     "thumbnail": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop",
     "video": null,
     "techStack": [
@@ -543,7 +543,7 @@
         "challenge": "Teachers needed to take attendance in classrooms with unreliable internet without losing records or creating duplicates.",
         "solution": "Preloaded students, classes, schedules and terms into IndexedDB, queued attendance changes locally with retry and failure handling, and synced them automatically when the connection returned, with an offline status page reachable from any screen."
       },
-      "impact": "Delivered a working MVP covering attendance, scheduling, enrollment, grading, messaging and reporting for five user roles, tested with Vitest, Playwright and a pytest harness. The project is currently on hiatus before pilot deployment."
+      "impact": "Delivered a working MVP covering attendance, scheduling, enrollment, grading, messaging and reporting for five user roles, tested with Vitest, Playwright and a pytest harness. It was not deployed: the project was put on hold after recent earthquakes damaged the commissioning school's facilities."
     }
   }
 ]

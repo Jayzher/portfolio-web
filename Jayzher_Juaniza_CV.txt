@@ -120,7 +120,9 @@ School Attendance Monitoring System (SAMS)  —  On Hiatus
 • Built it as an offline-first PWA: reference data is cached in IndexedDB and
   attendance taken offline is queued and synced on reconnect; Django Channels
   and Celery handle real-time messaging and push notifications.
-• MVP completed; the project is currently on hiatus.
+• Commissioned by a school; the MVP was completed but not deployed. The
+  project is on hiatus because recent earthquakes damaged the school's
+  facilities.
 
 Technologies: Django, DRF, Celery, Redis, Django Channels, PostgreSQL, React
     19, TypeScript, PWA (IndexedDB), Firebase Cloud Messaging, Docker, Nginx
