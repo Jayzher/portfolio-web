@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, CodeXml, ExternalLink, Clock, Video, Lock, ArrowRight, CheckCircle2, ShieldCheck, Database, Server, Cpu, Sparkles, Layers } from 'lucide-react'
+import { X, CodeXml, ExternalLink, Clock, Video, Lock, ArrowRight, CheckCircle2, ShieldCheck, Database, Server, Cpu, Sparkles, Layers, Globe } from 'lucide-react'
 import ReactPlayer from 'react-player'
 import useProjectStore from '../../store/projectStore'
 
@@ -357,6 +357,66 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                   </div>
                 </div>
               )}
+
+              {/* Websites Built (e.g. Agentic Website Factory fleet) */}
+              {project.websites?.length > 0 && (() => {
+                const liveCount = project.websites.filter((w) => w.status !== 'deploying').length
+                const deployingCount = project.websites.length - liveCount
+                return (
+                  <div className="pt-4 border-t border-border/40 space-y-3">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <h4 className="text-xs font-extrabold uppercase tracking-widest text-accent flex items-center gap-1.5">
+                        <Globe className="w-4 h-4" /> Websites Built ({project.websites.length})
+                      </h4>
+                      <span className="text-[11px] font-semibold text-text-secondary">
+                        {liveCount} live{deployingCount > 0 && ` · ${deployingCount} deploying`}
+                      </span>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      {project.websites.map((site) => {
+                        const isDeploying = site.status === 'deploying'
+                        const domain = site.url.replace(/^https?:\/\//, '').replace(/\/$/, '')
+                        const body = (
+                          <>
+                            <div className="min-w-0">
+                              <span className="block text-xs font-semibold text-text-primary truncate">
+                                {site.name}
+                                {site.type === 'school' && (
+                                  <span className="ml-1.5 text-[10px] font-bold uppercase text-purple-400">School</span>
+                                )}
+                              </span>
+                              <span className="block text-[11px] text-text-secondary truncate">{domain}</span>
+                            </div>
+                            {isDeploying ? (
+                              <span className="flex-shrink-0 flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-500/15 text-amber-400 border border-amber-500/30">
+                                <Clock className="w-3 h-3" /> Deploying
+                              </span>
+                            ) : (
+                              <ExternalLink className="w-3.5 h-3.5 flex-shrink-0 text-text-secondary group-hover/site:text-accent transition-colors" />
+                            )}
+                          </>
+                        )
+                        const cls = 'group/site flex items-center justify-between gap-3 p-3 rounded-xl border border-border/40 bg-black/5 dark:bg-white/5'
+                        return isDeploying ? (
+                          <div key={site.url} className={cls} title="DNS pending — deploying soon">
+                            {body}
+                          </div>
+                        ) : (
+                          <a
+                            key={site.url}
+                            href={site.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`${cls} hover:border-accent/50 transition-colors`}
+                          >
+                            {body}
+                          </a>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )
+              })()}
 
               {/* Technologies Pill Grid */}
               <div className="pt-4 border-t border-border/40">

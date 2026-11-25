@@ -394,8 +394,8 @@
   {
     "id": "proj-agentic-website-factory",
     "title": "Agentic Website Factory",
-    "description": "A production system I designed and built in which AI agents take a website from company research through business analysis, design, code, testing and audits. It runs 34 agent roles with written contracts across 17 phases, each ending in a pass/fail check, with human sign-off points along the way. I used it to produce and deploy 29 live websites (27 corporate sites and 2 school sites). Each site is its own Next.js, TypeScript and Tailwind project, with a Django REST and PostgreSQL CMS Studio where needed, and every site must pass the same security, SEO, performance, accessibility and compliance audits.",
-    "shortDescription": "Multi-agent Claude system with 34 roles and 17 gated phases that researched, built, audited and deployed 29 live websites",
+    "description": "A production system I designed and built in which AI agents take a website from company research through business analysis, design, code, testing and audits. It runs 34 agent roles with written contracts across 17 phases, each ending in a pass/fail check, with human sign-off points along the way. I used it to produce 29 websites (25 live, 4 deploying): 27 corporate sites and 2 school sites. Each site is its own Next.js, TypeScript and Tailwind project, with a Django REST and PostgreSQL CMS Studio where needed, and every site must pass the same security, SEO, performance, accessibility and compliance audits.",
+    "shortDescription": "Multi-agent Claude system with 34 roles and 17 gated phases that researched, built and audited 29 websites (25 live, 4 deploying)",
     "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
     "video": null,
     "techStack": [
@@ -415,6 +415,37 @@
       "isPrivateRepo": true,
       "privateRepoNote": "Private Production System — Architecture & Demo available upon request"
     },
+    "websites": [
+      { "name": "Gensan Feedmill, Inc.", "url": "https://gensanfeedmill.com", "type": "corporate", "status": "live" },
+      { "name": "Vetsgrow", "url": "https://vetsgrow.com.ph", "type": "corporate", "status": "live" },
+      { "name": "Meat Corner", "url": "https://meatcorner.com.ph", "type": "corporate", "status": "live" },
+      { "name": "Skills Synergy (SSMC)", "url": "https://ssmc.com.ph", "type": "corporate", "status": "live" },
+      { "name": "RRAgro", "url": "https://rragro.com.ph", "type": "corporate", "status": "live" },
+      { "name": "Prime Katsuobushi Philippines", "url": "https://primekatsu.com", "type": "corporate", "status": "live" },
+      { "name": "VetFarm", "url": "https://vetfarm.com.ph", "type": "corporate", "status": "live" },
+      { "name": "Rell & Renn Fishing Corporation", "url": "https://rrfishing.com.ph", "type": "corporate", "status": "live" },
+      { "name": "SNCFI", "url": "https://sncfi.edu.ph", "type": "school", "status": "live" },
+      { "name": "AquaVet", "url": "https://aquavet.com.ph", "type": "corporate", "status": "live" },
+      { "name": "NMC Ventures", "url": "https://nmcventures.com", "type": "corporate", "status": "live" },
+      { "name": "IDDES Broadcast Group", "url": "https://iddes.com.ph", "type": "corporate", "status": "live" },
+      { "name": "RRCS Marine", "url": "https://rrcs.com.ph", "type": "corporate", "status": "live" },
+      { "name": "RRCS Construction", "url": "https://rrcsconstruction.com.ph", "type": "corporate", "status": "live" },
+      { "name": "RRCS Hardware", "url": "https://rrcshardware.com.ph", "type": "corporate", "status": "live" },
+      { "name": "Rell & Renn Trading", "url": "https://rrtc.com.ph", "type": "corporate", "status": "live" },
+      { "name": "RR Seafood", "url": "https://rrseafood.com.ph", "type": "corporate", "status": "live" },
+      { "name": "Cheetah Logistics", "url": "https://cheetahlogistics.com.ph", "type": "corporate", "status": "deploying" },
+      { "name": "Beyond Trade & Company", "url": "https://beyondtradeandcompany.com", "type": "corporate", "status": "live" },
+      { "name": "Trade Exchange Enterprise", "url": "https://tradeexchangeenterprise.com", "type": "corporate", "status": "live" },
+      { "name": "iFresh Corporation", "url": "https://ifresh.com.ph", "type": "corporate", "status": "live" },
+      { "name": "Primera Casa", "url": "https://primeracasa.com.ph", "type": "corporate", "status": "deploying" },
+      { "name": "Nutrivet", "url": "https://nutrivet.com.ph", "type": "corporate", "status": "live" },
+      { "name": "Caballero Livestock Trading", "url": "https://caballerolivestocktrading.com", "type": "corporate", "status": "live" },
+      { "name": "NHSAFI", "url": "https://newhope.edu.ph", "type": "school", "status": "live" },
+      { "name": "Ultramart", "url": "https://ultramart.com.ph", "type": "corporate", "status": "deploying" },
+      { "name": "Southbarn Farms", "url": "https://southbarn.com.ph", "type": "corporate", "status": "live" },
+      { "name": "Nutrihogs", "url": "https://nutrihogs.com.ph", "type": "corporate", "status": "live" },
+      { "name": "Grandemarc", "url": "https://grandemarc.com.ph", "type": "corporate", "status": "deploying" }
+    ],
     "featured": true,
     "order": 0,
     "createdAt": "2026-11-25T00:00:00Z",
@@ -448,7 +479,7 @@
         "challenge": "Running dozens of agent roles across many sites is costly, and keeping 29 separate projects consistent and up to standard is hard to do by hand.",
         "solution": "Routed each role to the cheapest model that can do it well (Opus, Sonnet or Haiku sub-agents) to cut AI costs, and wrote Python tools for schema validation, automated checks and changes applied across the whole fleet."
       },
-      "impact": "Produced and deployed 29 live websites (27 corporate sites and 2 school sites), each its own project and each passing the same security, SEO, performance, accessibility and compliance audits."
+      "impact": "Produced 29 websites (25 live, 4 deploying): 27 corporate sites and 2 school sites, each its own project and each passing the same security, SEO, performance, accessibility and compliance audits."
     }
   }
 ]
