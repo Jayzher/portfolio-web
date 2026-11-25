@@ -1,0 +1,283 @@
+═══════════════════════════════════════════════════════════════════════════════
+                           JAYZHER D. JUANIZA
+                      FULL-STACK SOFTWARE ENGINEER
+═══════════════════════════════════════════════════════════════════════════════
+
+CONTACT INFORMATION
+───────────────────────────────────────────────────────────────────────────────
+Email:              jayzherjuaniza@gmail.com
+Phone:              +63 951 880 4288
+Location:           Surallah, South Cotabato, Philippines
+GitHub:             https://github.com/Jayzher
+LinkedIn:           https://linkedin.com
+Portfolio:          Available upon request
+
+PROFESSIONAL SUMMARY
+───────────────────────────────────────────────────────────────────────────────
+Full-Stack Software Engineer with 2+ years of experience designing, architecting, 
+and deploying high-impact enterprise applications, educational management systems, 
+and automated workflow solutions. Specialized in Python (Django/DRF), Fastify, 
+React.js, Redux, TypeScript, PostgreSQL, Single-Codebase Multi-Tenancy 
+Architecture, and RESTful microservices.
+
+Proven track record of building production systems including Asset Management 
+Platforms, Business Management & Inventory Systems (BMIS), Multi-Tenant Ticket 
+Support & Task Workflows, School Record Management Systems (RMS), and System 
+Validation & Evaluation (SVE) suites serving 3,000+ active users across multiple 
+organizations.
+
+Currently seeking remote Full-Stack Developer / Software Engineer opportunities 
+with international engineering teams. Available for worldwide remote collaboration 
+with flexible timezone overlap (UTC+8).
+
+CORE COMPETENCIES
+───────────────────────────────────────────────────────────────────────────────
+• Single Codebase Multi-Tenancy Architecture    • RESTful API Design & Integration
+• Enterprise System Design & Development        • Asynchronous Task Queue Engineering
+• Full-Stack Web Application Development        • Database Schema Design & Optimization
+• Workflow Automation & Business Logic          • Role-Based Access Control (RBAC)
+• Agile Development & Team Collaboration        • System Maintenance & Technical Support
+
+TECHNICAL SKILLS
+───────────────────────────────────────────────────────────────────────────────
+
+Backend Development:
+    Python, Django, Django REST Framework (DRF), Fastify, Celery, Redis, PHP, Java
+
+Frontend Development:
+    React.js, Redux, Redux Toolkit, JavaScript (ES6+), TypeScript, Tailwind CSS, 
+    HTML5, CSS3, Framer Motion, Bootstrap
+
+Database & Data Management:
+    PostgreSQL, MySQL, MongoDB, Multi-Tenant Schema Architecture, Database 
+    Optimization, Query Performance Tuning
+
+DevOps & Infrastructure:
+    Docker, Git, GitHub, Version Control, System Deployment, CI/CD Workflows
+
+Architecture & Design Patterns:
+    Single Codebase Multi-Tenancy, Microservices Architecture, REST APIs, 
+    Authentication & Authorization, Role-Based Access Control (RBAC), API Security
+
+AI-Accelerated Development:
+    GitHub Copilot, Claude AI, Gemini AI, Windsurf IDE, AI-Driven Code Generation, 
+    Automated Testing & Debugging
+
+PROFESSIONAL EXPERIENCE
+───────────────────────────────────────────────────────────────────────────────
+
+Full-Stack Software Engineer
+Classify Inc. | Surallah, South Cotabato, Philippines
+July 2024 — Present
+
+Engineered, deployed, and maintained mission-critical enterprise web applications 
+and educational management platforms serving 3,000+ active students, faculty, and 
+administrative users across multiple client tenants.
+
+Key Achievements & Projects:
+
+• Business Management & Inventory System (BMIS)
+  Architected and deployed a Single Codebase Multi-Tenancy platform using React.js, 
+  Redux, Fastify, Celery, PostgreSQL, and Docker. Achieved sub-50ms API response 
+  latency through high-performance Fastify microservices and implemented 
+  asynchronous Celery task workers for heavy inventory auditing, reducing stock 
+  count errors and accelerating purchase order processing.
+
+• Asset Management System
+  Developed full-lifecycle enterprise asset tracking platform with barcode 
+  categorization, multi-location stock movement auditing, procurement workflows, 
+  and preventive maintenance scheduling. Streamlined organizational asset tracking 
+  for 1,000+ equipment items across multiple departments.
+
+• Multi-Tenant Ticket Support & Task Management System
+  Engineered unified helpdesk and project management platform on Single Codebase 
+  Multi-Tenancy Architecture, serving multiple client organizations with isolated 
+  workspace data. Implemented Kanban task boards, SLA monitoring, automated 
+  escalation workflows, and resolution analytics.
+
+• School Record Management System (RMS)
+  Collaborated in a 3-developer team to design and build multi-tenant educational 
+  platform handling enrollment, subject loading, grading computations, and academic 
+  transcript management. Implemented two-way data synchronization with external 
+  LMS microservices, digitizing academic records for 2,000+ students across 3 
+  educational institutions and reducing enrollment processing time.
+
+• System Validation & Evaluation (SVE) Platform
+  Designed automated quality control and project turnover evaluation system with 
+  dynamic scoring matrices, weighted criteria evaluation workflows, and automated 
+  PDF certificate generation.
+
+• Content Management Systems (CMS)
+  Developed and maintained school portal CMS platforms for 3+ educational 
+  institutions, security patch releases, and continuous 
+  feature upgrades with role-based content authoring and announcement publishing.
+
+• Technical Support & System Operations
+  Delivered level-2/3 technical support and post-deployment system maintenance, 
+  resolving user issues, implementing feature enhancements, and conducting 
+  proactive system monitoring. Reduced client ticket resolution turnaround by 45% 
+  through rapid issue diagnosis and effective communication.
+
+Technologies: React.js, Redux, Fastify, Celery, Python, Django, Django REST 
+Framework, PostgreSQL, Multi-Tenancy Architecture, Docker, TypeScript, Tailwind CSS
+
+
+ICT Software Engineer Intern (OJT)
+Department of Agriculture — Regional Field Office XII | South Cotabato, Philippines
+November 2023 — March 2024
+
+Spearheaded internal workflow automation and administrative systems digitization 
+for regional government operations during on-the-job training internship program.
+
+Key Achievements & Projects:
+
+• Request Service System
+  Designed and developed automated internal service request routing platform with 
+  multi-tier approval workflows, division routing logic, and status tracking 
+  dashboards. Replaced manual paper-based processes, cutting service turnaround 
+  time from 3 days to under 4 hours across 5+ regional agency divisions.
+
+• Travel Order System
+  Engineered automated staff travel application and approval management system 
+  with sequential multi-tier authorization workflow and dynamic PDF travel voucher 
+  generation. Streamlined government personnel travel processing and eliminated 
+  lost travel documentation.
+
+• Database Design & Documentation
+  Designed relational MySQL database schemas, implemented role-based authorization 
+  controls separating requesting staff, division chiefs, regional directors, and 
+  ICT administrators. Authored complete technical system documentation including 
+  entity-relationship diagrams and API specifications.
+
+Technologies: PHP, JavaScript, MySQL, Bootstrap, REST APIs, PDF Generation Engine
+
+
+EDUCATION
+───────────────────────────────────────────────────────────────────────────────
+
+Bachelor of Science in Information Technology (BSIT)
+Holy Child Central Colleges Inc.
+2021 — 2024
+
+Comprehensive foundation in software engineering, object-oriented design, 
+relational database systems, application architecture, web development, and 
+computer science fundamentals.
+
+
+Full Stack Web Development (MERN Stack)
+Zuitt Coding Bootcamp
+2023 — 2024
+
+Intensive engineering bootcamp focused on modern full-stack web development with 
+MongoDB, Express.js, React.js, and Node.js. Completed hands-on projects covering 
+frontend component architecture, backend API development, database integration, 
+authentication systems, and deployment workflows.
+
+
+NOTABLE PROJECT PORTFOLIO
+───────────────────────────────────────────────────────────────────────────────
+
+1. Asset Management System
+   Single codebase multi-tenant enterprise asset tracking platform with barcode 
+   scanning, procurement workflows, maintenance scheduling, and audit dashboards.
+   Tech: Python, Django, React.js, TypeScript, PostgreSQL, Multi-Tenancy, Docker
+
+2. Multi-Tenant Ticket Support & Task Management
+   Unified helpdesk and Kanban project management platform serving multiple client 
+   organizations from single codebase deployment with SLA tracking and escalation.
+   Tech: Python, Django, DRF, React.js, PostgreSQL, Multi-Tenancy, Kanban Engine
+
+3. School Record Management System (RMS)
+   Multi-tenant educational platform with enrollment workflows, grading systems, 
+   transcript generation, and two-way LMS microservice synchronization.
+   Tech: Python, Django, PostgreSQL, Multi-Tenancy, JavaScript, Tailwind CSS
+
+4. Business Management & Inventory System (BMIS)
+   High-performance inventory and business platform with asynchronous task queues, 
+   real-time stock auditing, and purchase order workflows achieving sub-50ms latency.
+   Tech: React.js, Redux, Fastify, Celery, PostgreSQL, Docker, Multi-Tenancy
+
+5. System Validation & Evaluation (SVE) Platform
+   Automated quality control evaluation system with dynamic scoring, UAT workflows, 
+   and automated PDF certificate generation for project turnovers.
+   Tech: Python, Django, DRF, React.js, PostgreSQL, PDF Generation
+
+6. Request & Travel Order System (Government OJT Project)
+   Digital service request routing and travel approval platform for Department of 
+   Agriculture operations with multi-tier authorization and PDF voucher generation.
+   Tech: PHP, JavaScript, MySQL, Bootstrap, REST APIs
+
+Note: Most projects are private commercial repositories. Architecture diagrams, 
+demonstrations, and technical documentation available upon request.
+
+
+PROFESSIONAL ACHIEVEMENTS
+───────────────────────────────────────────────────────────────────────────────
+
+• Architected and deployed 8+ production-grade enterprise systems serving 3,000+ 
+  active users across educational institutions and business organizations
+
+• Specialized in Single Codebase Multi-Tenancy Architecture, enabling multiple 
+  client organizations to operate from unified codebase deployments with complete 
+  data isolation, reducing infrastructure costs and maintenance overhead.
+
+• Reduced inventory audit discrepancies by 80% and accelerated purchase order 
+  processing by 5x through automated workflow engineering.
+
+• Maintained 95% uptime across deployed Content Management Systems with proactive 
+  monitoring, security patching, and continuous feature enhancement
+
+• Reduced technical support ticket resolution turnaround by 45% through effective 
+  issue diagnosis, clear communication, and rapid implementation
+
+• Digitized academic records for 2,000+ students across multiple educational 
+  institutions, cutting enrollment processing time from weeks to under 2 days
+
+• Achieved 98% SLA compliance across 500+ support tickets through automated 
+  escalation workflows and real-time monitoring dashboards
+
+
+WORK METHODOLOGY & APPROACH
+───────────────────────────────────────────────────────────────────────────────
+
+• Requirements Analysis: Collaborate with stakeholders to translate business 
+  requirements into technical specifications and system architecture designs
+
+• Agile Development: Participate in sprint planning, daily standups, and iterative 
+  development cycles with continuous feedback integration
+
+• Code Quality: Write clean, maintainable, and well-documented code following 
+  industry best practices and design patterns
+
+• Testing & Validation: Implement comprehensive testing strategies including unit 
+  tests, integration tests, and user acceptance testing (UAT)
+
+• Deployment & Operations: Handle system deployment, monitoring, maintenance, and 
+  post-deployment technical support with quick turnaround
+
+• Team Collaboration: Work effectively in cross-functional teams, communicate 
+  technical concepts clearly, and contribute to code reviews and knowledge sharing
+
+• Continuous Learning: Leverage AI-accelerated development tools (Claude Code, 
+AntiGravity) to accelerate feature delivery while maintaining code quality
+
+
+PROFESSIONAL REFERENCES
+───────────────────────────────────────────────────────────────────────────────
+
+Available upon request.
+
+
+ADDITIONAL INFORMATION
+───────────────────────────────────────────────────────────────────────────────
+
+Remote Work Availability:    Worldwide Remote (Full-Time / Contract)
+Timezone:                     UTC+8 (Philippines) with flexible overlap for US/EU
+Work Arrangement:             Fully remote with proven track record of remote delivery
+Employment Type:              Open to Full-Time and Contract
+Availability:                 Immediate start available
+Compensation Expectation:     Competitive international remote engineering standards
+
+───────────────────────────────────────────────────────────────────────────────
+                    End of Curriculum Vitae — Jayzher D. Juaniza
+═══════════════════════════════════════════════════════════════════════════════
