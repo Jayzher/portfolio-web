@@ -62,13 +62,15 @@ export default function ExperienceSection() {
                     <h3 className="text-lg sm:text-xl font-extrabold text-text-primary">
                       {item.role} <span className="text-accent">@ {item.company}</span>
                     </h3>
-                    <div className="flex items-center gap-2 mt-0.5 text-xs font-semibold">
-                      <span className={`flex items-center gap-1 font-normal ${
-                        isDarkMode ? 'text-text-secondary' : 'text-text-secondary-light'
-                      }`}>
-                        <MapPin className="w-3.5 h-3.5 text-accent" /> {item.location}
-                      </span>
-                    </div>
+                    {item.location && (
+                      <div className="flex items-center gap-2 mt-0.5 text-xs font-semibold">
+                        <span className={`flex items-center gap-1 font-normal ${
+                          isDarkMode ? 'text-text-secondary' : 'text-text-secondary-light'
+                        }`}>
+                          <MapPin className="w-3.5 h-3.5 text-accent" /> {item.location}
+                        </span>
+                      </div>
+                    )}
                   </div>
 
                   <span className={`inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold self-start sm:self-auto border ${

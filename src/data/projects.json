@@ -61,7 +61,7 @@
         "challenge": "Handling concurrent asset transfer requests across multiple tenant organizations running on a single unified codebase without cross-tenant data leaks or race conditions.",
         "solution": "Implemented dynamic tenant middleware scoping paired with PostgreSQL row locking (`select_for_update`) within atomic Django transactions, guaranteeing immutable tenant asset movement logs."
       },
-      "impact": "Streamlined asset tracking for 1,000+ organizational items across 4 tenant departments on a single codebase deployment, reducing audit cycle times by 65% and eliminating unrecorded equipment loss."
+      "impact": "Streamlined asset tracking for about 1,000 organizational items across 4 tenant departments on a single codebase deployment, reducing audit cycle times by roughly 65% and eliminating unrecorded equipment loss."
     }
   },
   {
@@ -124,7 +124,7 @@
         "challenge": "Architecting a single codebase system that serves multiple independent client companies without data cross-contamination or expensive dedicated server overhead per client.",
         "solution": "Engineered a custom Django middleware that dynamically extracts tenant context from incoming request host headers, automatically scoping all ORM queries and API responses to the active tenant."
       },
-      "impact": "Deployed a single codebase multi-tenant platform serving multiple client organizations, processing 500+ tickets with 98% SLA compliance and reducing deployment maintenance overhead by 70%."
+      "impact": "Deployed a single codebase multi-tenant platform serving multiple client organizations, processing around 500 tickets at about 98% SLA compliance and reducing deployment maintenance overhead by roughly 70%."
     }
   },
   {
@@ -187,7 +187,7 @@
         "challenge": "Synchronizing academic records and course offerings between the LMS and RMS for multiple distinct school institutions running on a single unified codebase.",
         "solution": "Designed idempotent multi-tenant REST API endpoints utilizing institutional tenant UUID locks and student registration keys, preventing cross-tenant data leaks and duplicate grade submissions."
       },
-      "impact": "Digitized academic records for 2,000+ students across 3 educational institutions using a single codebase multi-tenant architecture, cutting enrollment processing time from weeks to under 2 days."
+      "impact": "Digitized academic records for about 2,000 students across 3 educational institutions using a single codebase multi-tenant architecture, cutting enrollment processing time from weeks to around 2 days."
     }
   },
   {
@@ -224,20 +224,20 @@
       "role": "Full-Stack Software Engineer — Designed the single codebase multi-tenancy architecture, Fastify REST microservice endpoints, Redux state management engine, Celery asynchronous background queues, and PostgreSQL data schemas.",
       "architectureFlow": [
         { "step": "React & Redux Toolkit UI", "desc": "Predictable State & Dynamic Inventory UI" },
-        { "step": "Fastify API Engine", "desc": "High-Throughput REST Microservices (<50ms)" },
+        { "step": "Fastify API Engine", "desc": "High-Throughput REST Microservices" },
         { "step": "Celery & Redis Worker", "desc": "Asynchronous Batch Auditing & Queue" },
         { "step": "PostgreSQL Multi-Tenant DB", "desc": "Tenant Data Isolation & Stock Schemas" },
         { "step": "Docker Cluster", "desc": "Containerized Deployment & Monitoring" }
       ],
       "architectureDetails": {
         "databaseSchema": "Single codebase multi-tenant relational model normalizing SKU Items, Multi-Warehouse Locations, Requisitions, Purchase Orders, Sales Invoices, and Stock Movement Audit Trails.",
-        "apiStructure": "High-throughput Fastify REST APIs with Fastify JSON Schema validation, JWT token authorization, and Redis caching achieving under 50ms response latency.",
+        "apiStructure": "High-throughput Fastify REST APIs with Fastify JSON Schema validation, JWT token authorization, and Redis caching for fast API responses.",
         "backgroundProcessing": "Celery worker cluster backed by Redis for asynchronous batch stock re-indexing, automated low-stock notifications, and heavy report compilation.",
         "securityAndRBAC": "Granular multi-tenant RBAC separating Warehouse Managers, Procurement Officers, Sales Clerks, and Corporate Executives."
       },
       "keyFeatures": [
         "Single Codebase Multi-Tenancy Architecture (Multi-Warehouse & Organization Tenant Isolation)",
-        "High-Performance Fastify REST API Microservices (<50ms API Latency)",
+        "High-Performance Fastify REST API Microservices",
         "Asynchronous Celery & Redis Task Worker for Heavy Inventory Auditing",
         "Redux Toolkit Predictable Front-End State & Inventory Management",
         "Purchase Order Requisition & Supplier Invoice Workflows",
@@ -247,7 +247,7 @@
         "challenge": "Generating heavy daily inventory audit reports and multi-warehouse reconciliation across tens of thousands of SKU items without blocking HTTP API response latency.",
         "solution": "Engineered asynchronous Celery background workers backed by Redis to compile inventory reports out-of-band, streaming completed download URLs back via polling/WebSockets without slowing down Fastify REST APIs."
       },
-      "impact": "Enabled real-time multi-tenant inventory tracking across multiple warehouses with sub-50ms API responses, reducing stock count errors by 80% and speeding up purchase order processing by 5x."
+      "impact": "Enabled real-time multi-tenant inventory tracking across multiple warehouses, reducing stock count errors by roughly 80% and speeding up purchase order processing by about 5x."
     }
   },
   {
@@ -388,7 +388,7 @@
         "challenge": "Digitizing legacy government paper forms into a strict multi-tier approval hierarchy while ensuring non-technical staff could submit and track requests seamlessly.",
         "solution": "Built a clean step-by-step form interface paired with a dynamic SQL approval status state machine that notifies division chiefs sequentially upon each approval stage."
       },
-      "impact": "Digitized service request and travel approval workflows for government personnel across 5+ regional agency divisions, cutting approval processing time from 3 days to under 4 hours."
+      "impact": "Digitized service request and travel approval workflows for government personnel across roughly 5 regional agency divisions, cutting approval processing time from about 3 days to around 4 hours."
     }
   },
   {

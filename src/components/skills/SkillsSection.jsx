@@ -11,6 +11,7 @@ export default function SkillsSection() {
     "Backend": Terminal,
     "Frontend": Layout,
     "Database & Storage": Database,
+    "AI & Agents": Sparkles,
     "Software Engineering & Infrastructure": Cpu,
   }
 

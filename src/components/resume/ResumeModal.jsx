@@ -64,10 +64,11 @@ export default function ResumeModal({ isOpen, onClose }) {
                 href={profile.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                download="Jayzher_Juaniza_CV.pdf"
                 className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-accent text-white text-xs font-semibold hover:bg-accent-hover transition-colors shadow-md"
               >
                 <Download className="w-3.5 h-3.5" />
-                Original Resume Image
+                Download CV (PDF)
               </a>
               <button
                 onClick={onClose}
@@ -104,6 +105,11 @@ export default function ResumeModal({ isOpen, onClose }) {
                 <a href={profile.github} target="_blank" rel="noreferrer" className="flex items-center gap-1 hover:text-accent">
                   <Globe className="w-3.5 h-3.5 text-accent" /> github.com/Jayzher
                 </a>
+                {profile.githubAlt && (
+                  <a href={profile.githubAlt} target="_blank" rel="noreferrer" className="flex items-center gap-1 hover:text-accent">
+                    <Globe className="w-3.5 h-3.5 text-accent" /> {profile.githubAlt.replace(/^https?:\/\//, '')}
+                  </a>
+                )}
               </div>
             </div>
 
@@ -153,7 +159,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                       </h3>
                       <span className="text-xs font-mono text-text-secondary">{job.period}</span>
                     </div>
-                    <p className="text-xs italic text-text-secondary">{job.location} | {job.description}</p>
+                    <p className="text-xs italic text-text-secondary">{job.location ? `${job.location} | ` : ''}{job.description}</p>
                     <ul className="space-y-1.5 pt-1">
                       {job.achievements.map((ach, idx) => (
                         <li key={idx} className="flex items-start gap-2 text-xs text-text-secondary">
@@ -182,7 +188,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                 <div className="p-3.5 rounded-xl border border-border/50 bg-black/5 dark:bg-white/5">
                   <h3 className="text-sm font-bold">Ticket Support System with Tasks & Kanban Management</h3>
                   <p className="text-xs text-text-secondary mt-0.5">
-                    Built unified helpdesk ticketing with drag-and-drop Kanban state engine, automated SLA timers, and escalation workflows handling 500+ ticket resolutions with 98% compliance.
+                    Built unified helpdesk ticketing with drag-and-drop Kanban state engine, automated SLA timers, and escalation workflows, handling around 500 tickets at about 98% SLA compliance.
                   </p>
                 </div>
               </div>
@@ -208,7 +214,7 @@ export default function ResumeModal({ isOpen, onClose }) {
             <div className="p-4 rounded-xl border border-accent/30 bg-accent/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
               <div>
                 <span className="font-bold text-accent block">Remote Overseas Work Readiness</span>
-                <span className="text-text-secondary">Open to Remote Full-Time / Contract roles (UTC+8 / Flexible Overlap)</span>
+                <span className="text-text-secondary">Open to Remote Full-Time / Contract roles (UTC+8 / Flexible Overlap) • 30-day notice period</span>
               </div>
               <a
                 href={`mailto:${profile.email}`}

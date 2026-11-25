@@ -3,8 +3,8 @@ export const portfolioData = {
     name: "Jayzher D. Juaniza",
     preferredName: "Jayzher",
     role: "Full-Stack Software Engineer",
-    specialization: "Specializing in Business Systems, Workflow Automation & Data-Driven Applications",
-    subRole: "Python • Django • Fastify • React • TypeScript • PostgreSQL • Docker",
+    specialization: "Specializing in Business Systems, Workflow Automation & Agentic AI Systems",
+    subRole: "Python • Django • Fastify • React • Next.js • TypeScript • PostgreSQL • Claude Agents",
     availability: "Available for Remote Worldwide Engineering Roles",
     status: "active",
     location: "Surallah, South Cotabato, Philippines",
@@ -12,12 +12,13 @@ export const portfolioData = {
     email: "jayzherjuaniza@gmail.com",
     linkedin: "https://linkedin.com",
     github: "https://github.com/Jayzher",
-    resumeUrl: "https://res.cloudinary.com/dgzhcuwym/image/upload/v1788870579/pgotzyrfti1lfehryyaa.png",
+    githubAlt: "https://github.com/Jayz-EE",
+    resumeUrl: "/Jayzher_Juaniza_CV.pdf",
     avatar: "https://res.cloudinary.com/dgzhcuwym/image/upload/v1788801420/rhm2ccgcxlm7vepxx5r7.jpg",
-    tagline: "Full-Stack Software Engineer specializing in Business Systems, Workflow Automation & Data-Driven Applications.",
+    tagline: "Full-Stack Software Engineer specializing in Business Systems, Workflow Automation & Agentic AI Systems.",
     bio: [
-      "I am a Full-Stack Software Engineer with 2+ years of experience designing, architecting, and deploying high-impact enterprise applications, educational management systems, and automated workflow solutions.",
-      "Specialized in Python (Django/DRF), Fastify, Celery, React.js, Redux, TypeScript, PostgreSQL, Single-Codebase Multi-Tenancy Architecture, and RESTful microservices. Proven track record of building production systems including Asset Management Platforms, Business Management & Inventory Systems (BMIS), Multi-Tenant Ticket Support & Task Workflows, School Record Management Systems (RMS), and System Validation & Evaluation (SVE) suites."
+      "Full-Stack Software Engineer with 2+ years of experience building enterprise web applications, school management systems and workflow automation with Python (Django/DRF), Fastify, React, TypeScript and PostgreSQL, including single-codebase multi-tenant platforms.",
+      "Designed and built an agentic AI pipeline that has produced 29 production websites. Seeking remote Full-Stack Developer / Software Engineer roles."
     ],
   },
 
@@ -32,7 +33,7 @@ export const portfolioData = {
     highlights: [
       { label: "Remote Worldwide", value: "100% Remote Ready" },
       { label: "Timezone Flexibility", value: "UTC+8 with US / EU Overlap" },
-      { label: "Contract & Full-Time", value: "Immediate Availability" },
+      { label: "Contract & Full-Time", value: "30-Day Notice Period" },
     ]
   },
 
@@ -104,7 +105,7 @@ export const portfolioData = {
       description: "Robust server-side logic, high-performance APIs & task queue engines",
       items: [
         { name: "Python", tag: "Primary Language" },
-        { name: "Django & DRF", tag: "Web & API Engine" },
+        { name: "Django & Django REST Framework", tag: "Web & API Engine" },
         { name: "Fastify", tag: "High-Speed Node API" },
         { name: "Celery & Redis", tag: "Task Queue Engine" },
         { name: "PHP", tag: "Server-side Scripting" },
@@ -117,10 +118,12 @@ export const portfolioData = {
       items: [
         { name: "React.js", tag: "UI Library" },
         { name: "Redux / Redux Toolkit", tag: "State Management" },
+        { name: "Next.js", tag: "React Framework" },
         { name: "JavaScript (ES6+)", tag: "Core Language" },
         { name: "TypeScript", tag: "Type Safety" },
         { name: "Tailwind CSS", tag: "Styling Framework" },
         { name: "HTML5 / CSS3", tag: "Semantic Markup" },
+        { name: "Bootstrap", tag: "UI Framework" },
       ]
     },
     {
@@ -134,52 +137,79 @@ export const portfolioData = {
       ]
     },
     {
+      category: "AI & Agents",
+      description: "Multi-agent pipelines, cost-aware model routing & AI-assisted development",
+      items: [
+        { name: "Claude Agents (Opus / Sonnet / Haiku)", tag: "Agent Models" },
+        { name: "Multi-Agent Pipelines", tag: "Orchestration" },
+        { name: "Model Routing", tag: "Cost Optimization" },
+        { name: "Claude Code", tag: "AI Dev Tool" },
+        { name: "GitHub Copilot", tag: "AI Dev Tool" },
+        { name: "Gemini", tag: "AI Dev Tool" },
+      ]
+    },
+    {
       category: "Software Engineering & Infrastructure",
-      description: "Single codebase multi-tenancy, security, containerization & post-deployment support",
+      description: "Single codebase multi-tenancy, security, containerization, deployment & post-deployment support",
       items: [
         { name: "Single Codebase Multi-Tenancy", tag: "Architecture" },
-        { name: "REST APIs", tag: "Integration" },
+        { name: "REST APIs & Microservices", tag: "Integration" },
         { name: "Authentication & RBAC", tag: "Security" },
         { name: "Docker", tag: "Containerization" },
         { name: "Git & GitHub", tag: "Version Control" },
+        { name: "CI/CD", tag: "Delivery" },
+        { name: "Render & Cloudflare", tag: "Hosting & DNS" },
         { name: "System Support & Operations", tag: "Maintenance" },
-        { name: "AI Dev Tools (Copilot, Claude, Gemini)", tag: "Workflows" },
       ]
     }
   ],
 
   experience: [
     {
+      period: "Private Commercial Project",
+      role: "Designer & Builder",
+      company: "Agentic Website Factory",
+      type: "Agentic AI System",
+      description: "Multi-agent AI system for building corporate and school websites.",
+      achievements: [
+        "Designed 34 agent roles, each with a written contract defining its inputs, outputs and responsibilities, so work passes between agents in a fixed, checkable form.",
+        "Built a 17-phase pipeline (research, business analysis, design, code, testing, audits, deploy) where every phase ends in a pass/fail gate, with human sign-off before key stages and go-live.",
+        "Cut AI costs by routing each role to the cheapest capable model across Opus, Sonnet and Haiku sub-agents.",
+        "Wrote Python tooling for schema validation, automated checks and fleet-wide changes across all sites from one toolset.",
+        "Delivered 29 websites (25 live, 4 deploying) — 27 corporate and 2 school sites — each passing the same security, SEO, performance, accessibility and compliance audits. Examples: gensanfeedmill.com, vetsgrow.com.ph, primekatsu.com, sncfi.edu.ph, cheetahlogistics.com.ph."
+      ],
+      skills: ["Claude Agents", "Python", "Next.js", "TypeScript", "Tailwind CSS", "Django REST Framework", "PostgreSQL (CMS Studio)"],
+    },
+    {
       period: "July 2024 — Present",
       role: "Full-Stack Software Engineer",
       company: "Classify Inc.",
-      location: "Surallah, South Cotabato",
+      location: "Surallah, South Cotabato, Philippines",
       type: "Professional Experience",
-      description: "Engineered, deployed, and maintained mission-critical enterprise web applications and educational management platforms serving 3,000+ active students, faculty, and administrative users across multiple client tenants.",
+      description: "Build and maintain enterprise and school management platforms used by about 3,000 students, faculty and staff across multiple client organizations.",
       achievements: [
-        "Architected and deployed a Business Management & Inventory System (BMIS) on a Single Codebase Multi-Tenancy Architecture using React.js, Redux, Fastify, Celery, PostgreSQL, and Docker, achieving sub-50ms API response latency and cutting inventory audit discrepancies by 80%.",
-        "Architected and deployed an Asset Management System featuring full-lifecycle equipment auditing, barcode categorization, stock movement tracking, and preventive maintenance logs.",
-        "Engineered a unified Ticket Support System with Tasks Management built on a Single Codebase Multi-Tenancy Architecture, serving multiple client organizations from one codebase with isolated workspace data.",
-        "Collaborated in a 3-developer team to design and build a multi-tenant School Record Management System (RMS), implementing two-way data synchronization with external LMS microservices from a single codebase deployment.",
-        "Designed and implemented a System Validation Evaluation (SVE) platform for automated quality control, evaluation scoring workflows, and PDF certificate generation.",
-        "Developed and maintained Content Management Systems (CMS) for 3+ educational institutions, ensuring 99.9% uptime, security patch releases, and continuous feature upgrades.",
-        "Delivered level-2/3 technical support and post-deployment system operations, reducing client ticket resolution turnaround by 45%."
+        "Built the Business Management & Inventory System (BMIS), a multi-tenant platform with Celery workers for inventory auditing and purchase order processing, cutting stock count errors by roughly 80% and speeding up purchase order processing by about 5x.",
+        "Developed an Asset Management System with barcode categorization, stock movement auditing and preventive maintenance scheduling, tracking about 1,000 items across 4 departments and cutting audit cycle times by roughly 65%.",
+        "Engineered a multi-tenant Ticket Support & Task Management System with Kanban boards, SLA monitoring and automated escalation, served from a single codebase; handled around 500 tickets at about 98% SLA compliance and cut deployment maintenance overhead by roughly 70%.",
+        "Co-built (3-developer team) a School Record Management System covering enrollment, grading and transcripts, with two-way LMS synchronization, digitizing records for about 2,000 students across 3 institutions.",
+        "Designed a System Validation & Evaluation platform with weighted scoring and automated PDF certificate generation.",
+        "Maintain school portal CMS platforms and provide post-deployment support, monitoring and client communication."
       ],
-      skills: ["React.js", "Redux", "Fastify", "Celery", "Python", "Django", "PostgreSQL", "Multi-Tenancy", "Single Codebase Architecture", "Docker", "Tailwind CSS"],
+      skills: ["React", "Redux", "Fastify", "Celery", "Python", "Django", "DRF", "PostgreSQL", "Docker", "TypeScript", "Tailwind CSS", "Render", "Cloudflare"],
     },
     {
       period: "November 2023 — March 2024",
-      role: "ICT Software Engineer Intern",
+      role: "ICT Software Engineer Intern (OJT)",
       company: "Department of Agriculture",
-      location: "South Cotabato",
+      location: "Regional Field Office XII, South Cotabato",
       type: "Internship Experience",
-      description: "Spearheaded internal workflow automation and administrative systems digitization for regional government operations.",
+      description: "Digitized internal service and travel workflows for regional government operations.",
       achievements: [
-        "Designed and developed an automated Request Service System, replacing manual paper routing and cutting service turnaround time from 3 days to under 4 hours.",
-        "Engineered an automated Travel Order System to streamline staff travel applications, multi-tier approvals, and dynamic PDF travel voucher generation.",
-        "Designed relational database schemas in MySQL, implemented role-based authorization controls, and authored complete technical system documentation."
+        "Built a Request Service System with multi-tier approvals and division routing, replacing a paper-based process and cutting approval time from about 3 days to around 4 hours across roughly 5 agency divisions.",
+        "Built a Travel Order System with sequential authorization and automated PDF travel voucher generation.",
+        "Designed MySQL schemas and role-based access for staff, division chiefs, regional directors and ICT admins; wrote ERDs and API specs."
       ],
-      skills: ["PHP", "JavaScript", "MySQL", "HTML5", "CSS3", "REST APIs", "Workflow Automation"],
+      skills: ["PHP", "JavaScript", "MySQL", "Bootstrap", "REST APIs", "PDF generation"],
     },
   ],
 
@@ -191,7 +221,7 @@ export const portfolioData = {
       description: "Comprehensive foundation in software engineering, object-oriented design, relational database systems, and application architecture.",
     },
     {
-      degree: "Full Stack Development (MERN Stack)",
+      degree: "Full Stack Web Development (MERN Stack)",
       institution: "Zuitt Coding Bootcamp",
       period: "2023 — 2024",
       description: "Intensive engineering bootcamp focused on modern full-stack web development with MongoDB, Express, React, and Node.js.",
