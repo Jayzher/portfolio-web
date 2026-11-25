@@ -346,6 +346,7 @@ export default function AddProjectModal() {
                   <option value="mobile">Mobile App</option>
                   <option value="ai">AI / ML</option>
                   <option value="api">API / Backend</option>
+                  <option value="agent">Claude Agent</option>
                   <option value="other">Custom Category</option>
                 </select>
               </div>

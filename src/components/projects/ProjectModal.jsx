@@ -151,7 +151,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                 <div>
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-[11px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-md bg-accent/15 text-accent border border-accent/30">
-                      {project.category}
+                      {project.category === 'agent' ? 'Claude Agent' : project.category}
                     </span>
                     {caseStudy && (
                       <span className="text-[11px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-md bg-purple-500/15 text-purple-400 border border-purple-500/30 flex items-center gap-1">

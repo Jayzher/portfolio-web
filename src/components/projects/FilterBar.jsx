@@ -9,6 +9,7 @@ const categoryLabels = {
   mobile: 'Mobile',
   api: 'API',
   ai: 'AI / ML',
+  agent: 'Claude Agent',
 }
 
 export default function FilterBar() {

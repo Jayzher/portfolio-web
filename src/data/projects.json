@@ -390,5 +390,65 @@
       },
       "impact": "Digitized service request and travel approval workflows for government personnel across 5+ regional agency divisions, cutting approval processing time from 3 days to under 4 hours."
     }
+  },
+  {
+    "id": "proj-agentic-website-factory",
+    "title": "Agentic Website Factory",
+    "description": "A production system I designed and built in which AI agents take a website from company research through business analysis, design, code, testing and audits. It runs 34 agent roles with written contracts across 17 phases, each ending in a pass/fail check, with human sign-off points along the way. I used it to produce and deploy 28 live websites (27 corporate sites and 1 school site). Each site is its own Next.js, TypeScript and Tailwind project, with a Django REST and PostgreSQL CMS Studio where needed, and every site must pass the same security, SEO, performance, accessibility and compliance audits.",
+    "shortDescription": "Multi-agent Claude system with 34 roles and 17 gated phases that researched, built, audited and deployed 28 live websites",
+    "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
+    "video": null,
+    "techStack": [
+      "Claude Agents",
+      "Opus / Sonnet / Haiku",
+      "Python",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Django REST Framework",
+      "PostgreSQL"
+    ],
+    "category": "agent",
+    "links": {
+      "github": "",
+      "live": "",
+      "isPrivateRepo": true,
+      "privateRepoNote": "Private Production System — Architecture & Demo available upon request"
+    },
+    "featured": true,
+    "order": 0,
+    "createdAt": "2026-11-25T00:00:00Z",
+    "caseStudy": {
+      "problem": "Building corporate and school websites one at a time was slow and uneven: research, business analysis, design, code, testing and audits each depended on manual hand-offs, and quality varied from site to site.",
+      "role": "Designer & Builder — Designed the agent roles and their written contracts, the 17-phase pipeline with pass/fail gates and human sign-off points, the model routing across Opus, Sonnet and Haiku sub-agents, and the Python tooling for validation, checks and fleet-wide changes.",
+      "architectureFlow": [
+        { "step": "Company Research", "desc": "Agents gather company and market context" },
+        { "step": "Business Analysis", "desc": "Requirements, sitemap and content plan" },
+        { "step": "Design", "desc": "Layout and visual system per site" },
+        { "step": "Code", "desc": "Next.js, TypeScript & Tailwind build, CMS Studio where needed" },
+        { "step": "Testing & Audits", "desc": "Security, SEO, performance, accessibility & compliance" },
+        { "step": "Human Sign-Off & Deploy", "desc": "Approval gate before the site goes live" }
+      ],
+      "architectureDetails": {
+        "databaseSchema": "Sites that need editable content get a CMS Studio built on Django REST Framework and PostgreSQL, serving content to the Next.js front end.",
+        "apiStructure": "34 agent roles, each with a written contract that defines its inputs, outputs and responsibilities, so work passes between agents in a fixed, checkable form.",
+        "securityAndRBAC": "Every site must pass the same security, SEO, performance, accessibility and compliance audits, with human sign-off points before key stages and deployment.",
+        "validationAndAudit": "Each of the 17 phases ends in a pass/fail check. Python tools handle schema validation and automated checks, so a phase cannot move on until its outputs pass."
+      },
+      "keyFeatures": [
+        "34 Agent Roles with Written Contracts",
+        "17 Phases, Each Ending in a Pass/Fail Check",
+        "Human Sign-Off Points at Key Stages",
+        "Cost-Aware Model Routing to Opus, Sonnet or Haiku Sub-Agents",
+        "Python Tools for Schema Validation & Automated Checks",
+        "Fleet-Wide Changes Across All Sites from One Toolset",
+        "Shared Security, SEO, Performance, Accessibility & Compliance Audits"
+      ],
+      "challengesAndSolutions": {
+        "challenge": "Running dozens of agent roles across many sites is costly, and keeping 28 separate projects consistent and up to standard is hard to do by hand.",
+        "solution": "Routed each role to the cheapest model that can do it well (Opus, Sonnet or Haiku sub-agents) to cut AI costs, and wrote Python tools for schema validation, automated checks and changes applied across the whole fleet."
+      },
+      "impact": "Produced and deployed 28 live websites (27 corporate sites and 1 school site), each its own project and each passing the same security, SEO, performance, accessibility and compliance audits."
+    }
   }
 ]
